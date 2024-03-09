@@ -22,7 +22,7 @@ export default function Hero() {
         </svg>
         <div className="relative aspect-[4/3] w-full max-md:max-h-64 md:max-w-[24rem]">
           <Image
-            src="/hero.jpg"
+            src="https://placehold.co/800x600/png"
             alt=""
             fill
             priority

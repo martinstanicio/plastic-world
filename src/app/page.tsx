@@ -15,7 +15,7 @@ export default function Home() {
           <section className="container grid max-w-4xl gap-8 py-8 md:grid-cols-2">
             <div className="relative h-full max-md:aspect-[4/3]">
               <Image
-                src="/sobre-nosotros.jpg"
+                src="https://placehold.co/800x600/png"
                 alt=""
                 fill
                 className="overflow-hidden rounded-md object-cover object-center shadow"
