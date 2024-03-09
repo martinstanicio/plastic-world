@@ -1,8 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import { description, title } from "@/lib/metadata";
-
 import { Button } from "./ui/button";
 
 export default function Hero() {
@@ -32,8 +30,14 @@ export default function Hero() {
         </div>
       </div>
       <div className="prose relative z-10 flex max-w-md flex-col justify-center px-4 pb-16 pt-8 prose-a:no-underline md:pr-0 md:pt-16">
-        <h1 className="[text-wrap:balance]">{title}</h1>
-        <p className="lead mt-0 md:w-11/12">{description}</p>
+        <h1 className="[text-wrap:balance]">
+          Encontrá el regalo empresarial perfecto con{" "}
+          <span className="text-primary">Madetodo</span>
+        </h1>
+        <p className="lead mt-0 md:w-11/12">
+          Regalos empresariales <strong>únicos y personalizados</strong>, en la
+          cantidad que necesites. Simplificá tu búsqueda con nosotros.
+        </p>
         <div className="flex w-full gap-4">
           <Button asChild size="lg" className="max-md:flex-grow">
             <Link href="/catalogo">Ver catálogo</Link>
