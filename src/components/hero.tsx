@@ -33,10 +33,10 @@ export default function Hero() {
       </div>
       <div className="prose relative z-10 flex max-w-md flex-col justify-center px-4 pb-16 pt-8 prose-a:no-underline md:pr-0 md:pt-16">
         <h1 className="[text-wrap:balance]">{title}</h1>
-        <p className="lead mt-0 md:w-3/4">{description}</p>
+        <p className="lead mt-0 md:w-11/12">{description}</p>
         <div className="flex w-full gap-4">
           <Button asChild size="lg" className="max-md:flex-grow">
-            <Link href="/catalogo">Ver productos</Link>
+            <Link href="/catalogo">Ver catálogo</Link>
           </Button>
           <Button
             asChild
