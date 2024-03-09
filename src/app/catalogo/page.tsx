@@ -17,12 +17,12 @@ export const metadata: Metadata = {
 
 export default function Products() {
   return (
-    <main className="container space-y-8 py-8">
+    <main className="container max-w-prose space-y-8 py-8 md:max-w-6xl">
       <header className="prose">
         <h1>{title}</h1>
         <p>{description}</p>
       </header>
-      <main className="mx-auto grid max-w-4xl grid-cols-[repeat(auto-fill,minmax(25ch,1fr))] gap-4">
+      <main className="mx-auto grid grid-cols-[repeat(auto-fill,minmax(25ch,1fr))] gap-4">
         {allProducts.map((product, i) => (
           <ProductCard key={i} {...product} />
         ))}

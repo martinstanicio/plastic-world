@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 
 export default function Contacto() {
   return (
-    <main className="container space-y-8 py-8">
+    <main className="container max-w-prose space-y-8 py-8">
       <header className="prose">
         <h1>{title}</h1>
         <p>{description}</p>

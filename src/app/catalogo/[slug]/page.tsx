@@ -25,7 +25,7 @@ export default function ProductPage({ params }: Props) {
   const { name, description, img, tags } = findProduct(params.slug);
 
   return (
-    <main className="container mx-auto space-y-8 py-8">
+    <main className="container mx-auto max-w-prose space-y-8 py-8 md:max-w-6xl">
       <header className="prose prose-a:no-underline">
         <div className="aspect-[4/3] w-full">
           <Image
