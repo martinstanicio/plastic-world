@@ -66,7 +66,7 @@ export default function Home() {
         <div className="bg-primary">
           <section className="container max-w-4xl space-y-4 py-8 md:text-center">
             <div className="dark prose text-primary-foreground">
-              <h2>Contactanos</h2>
+              <h2 className="text-primary-foreground">Contactanos</h2>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
                 ipsam repellendus soluta asperiores. At dolor veritatis,
