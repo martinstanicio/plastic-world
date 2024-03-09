@@ -24,18 +24,25 @@ export default function Home() {
             <div className="prose prose-a:no-underline">
               <h2>Quiénes somos</h2>
               <p>
-                Nosotros somos{" "}
-                <span className="font-bold text-primary">Madetodo</span>, y
-                nuestra pasión es lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Autem repellat sunt quisquam adipisci error
-                qui mollitia.
+                Somos una empresa familiar dedicada a la{" "}
+                <strong>
+                  producción de artículos de madera y elementos de parrilla
+                </strong>
+                . Si estás buscando hacer un regalo empresarial, Madetodo es el
+                lugar indicado.
               </p>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
-                voluptatibus laudantium possimus exercitationem debitis omnis
-                non adipisci corrupti et porro, nesciunt, dicta, vel quis ut
-                quisquam minima nam! Magnam, debitis!
+                Ofrecemos productos de <strong>alta calidad</strong>, capacidad
+                de <strong>producción masiva</strong>, y un servicio de
+                personalización de productos mediante{" "}
+                <strong>grabado láser</strong>.
               </p>
+              <p>
+                <strong className="text-primary">
+                  ¡Madetodo hace tus deseos realidad!
+                </strong>
+              </p>
+
               <Button asChild className="max-md:w-full">
                 <Link href="/sobre-nosotros">Sobre nosotros</Link>
               </Button>
