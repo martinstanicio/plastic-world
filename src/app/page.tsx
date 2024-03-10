@@ -11,6 +11,7 @@ import Link from "next/link";
 import BenefitCard from "@/components/benefit-card";
 import Hero from "@/components/hero";
 import ProductCard from "@/components/product-card";
+import Testimonial from "@/components/testimonial";
 import { Button } from "@/components/ui/button";
 import { featuredProducts } from "@/lib/products";
 
@@ -43,6 +44,7 @@ export default function Home() {
             />
           </section>
         </div>
+
         <section className="container grid max-w-prose gap-8 py-8 md:max-w-6xl md:grid-cols-2">
           <div className="relative h-full max-md:aspect-[4/3]">
             <Image
@@ -80,28 +82,51 @@ export default function Home() {
           </div>
         </section>
         <div className="bg-secondary text-secondary-foreground">
-          <section className="container max-w-prose space-y-8 py-8 md:max-w-6xl">
-            <header className="prose md:text-center">
-              <h2>Productos destacados</h2>
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam
-                rem sapiente id laudantium expedita aspernatur unde, eius natus.
-              </p>
-            </header>
-            <div className="space-y-4">
-              <div className="mx-auto grid grid-cols-[repeat(auto-fit,minmax(25ch,1fr))] grid-rows-3 gap-x-4 overflow-y-hidden [grid-auto-rows:0] sm:grid-rows-1">
-                {featuredProducts.map((product, i) => (
-                  <ProductCard className="mb-4" key={i} {...product} />
-                ))}
-              </div>
-              <div className="flex justify-center">
-                <Button asChild size="lg" className="max-md:w-full">
-                  <Link href="/catalogo">Ver todos los productos</Link>
-                </Button>
-              </div>
-            </div>
+          <section className="container grid max-w-prose grid-cols-1 gap-8 py-8 sm:grid-cols-2 md:max-w-6xl">
+            <Testimonial
+              name="María Hernandez"
+              role="Agente de recursos humanos de Violetta"
+              img="https://placehold.co/100x100/png"
+            >
+              <q>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Tempora aspernatur maxime quis laborum soluta rerum.
+              </q>
+            </Testimonial>
+            <Testimonial
+              name="Juan Perez"
+              role="Gerente en Clarín"
+              img="https://placehold.co/100x100/png"
+            >
+              <q>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam
+                laboriosam dicta sint quam. Ipsum reiciendis sunt animi tempora
+                eveniet temporibus commodi!
+              </q>
+            </Testimonial>
           </section>
         </div>
+        <section className="container max-w-prose space-y-8 py-8 md:max-w-6xl">
+          <header className="prose md:text-center">
+            <h2>Productos destacados</h2>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam rem
+              sapiente id laudantium expedita aspernatur unde, eius natus.
+            </p>
+          </header>
+          <div className="space-y-4">
+            <div className="mx-auto grid grid-cols-[repeat(auto-fit,minmax(25ch,1fr))] grid-rows-3 gap-x-4 overflow-y-hidden [grid-auto-rows:0] sm:grid-rows-1">
+              {featuredProducts.map((product, i) => (
+                <ProductCard className="mb-4" key={i} {...product} />
+              ))}
+            </div>
+            <div className="flex justify-center">
+              <Button asChild size="lg" className="max-md:w-full">
+                <Link href="/catalogo">Ver todos los productos</Link>
+              </Button>
+            </div>
+          </div>
+        </section>
         <div className="bg-primary">
           <section className="container max-w-prose space-y-4 py-8 md:max-w-6xl md:text-center">
             <div className="dark prose text-primary-foreground">
