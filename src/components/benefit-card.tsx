@@ -24,9 +24,7 @@ const BenefitCard = forwardRef<HTMLDivElement, Props>(
           <FontAwesomeIcon icon={icon} className="text-xl text-primary" />
           <span>{title}</span>
         </CardTitle>
-        <CardDescription>
-          <p>{description}</p>
-        </CardDescription>
+        <CardDescription>{description}</CardDescription>
       </CardHeader>
     </Card>
   ),
