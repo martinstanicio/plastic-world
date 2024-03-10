@@ -127,6 +127,26 @@ export default function Home() {
             </div>
           </div>
         </section>
+        <div className="shadow-inner-y border-y bg-secondary text-secondary-foreground">
+          <section className="container max-w-prose py-8 md:max-w-6xl">
+            <header className="prose md:text-center">
+              <h2>Confían en nosotros</h2>
+            </header>
+            <div className="flex flex-wrap justify-center gap-4">
+              {[
+                "/tsu.webp",
+                "/violetta.webp",
+                "/avon.webp",
+                "/gigot.webp",
+                "/quilmes.webp",
+                "/clarin.webp",
+                "/gestion-compartida.webp",
+              ].map((src, i) => (
+                <Image src={src} alt="" width={256} height={256} key={i} />
+              ))}
+            </div>
+          </section>
+        </div>
         <div className="bg-primary">
           <section className="container max-w-prose space-y-4 py-8 md:max-w-6xl md:text-center">
             <div className="dark prose text-primary-foreground">
