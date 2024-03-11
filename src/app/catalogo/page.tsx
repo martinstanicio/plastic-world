@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 export default function Products() {
   return (
     <main className="container max-w-prose space-y-8 py-8 md:max-w-6xl">
-      <header className="prose">
+      <header className="prose md:text-center">
         <h1>{title}</h1>
         <p>{description}</p>
       </header>
