@@ -20,7 +20,7 @@ export default function Home() {
     <>
       <Hero />
       <main>
-        <div className="shadow-inner-y border-y bg-secondary text-secondary-foreground">
+        <div className="border-y bg-secondary text-secondary-foreground shadow-inner-y">
           <section className="container grid max-w-prose grid-cols-1 gap-8 py-8 sm:grid-cols-2 md:max-w-6xl lg:grid-cols-4">
             <BenefitCard
               title="Envíos a domicilio"
@@ -81,7 +81,7 @@ export default function Home() {
             </Button>
           </div>
         </section>
-        <div className="shadow-inner-y border-y bg-secondary text-secondary-foreground">
+        <div className="border-y bg-secondary text-secondary-foreground shadow-inner-y">
           <section className="container grid max-w-prose grid-cols-1 gap-8 py-8 sm:grid-cols-2 md:max-w-6xl">
             <Testimonial
               name="María Hernandez"
@@ -127,7 +127,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <div className="shadow-inner-y border-y bg-secondary text-secondary-foreground">
+        <div className="border-y bg-secondary text-secondary-foreground shadow-inner-y">
           <section className="container max-w-prose py-8 md:max-w-6xl">
             <header className="prose md:text-center">
               <h2>Confían en nosotros</h2>
