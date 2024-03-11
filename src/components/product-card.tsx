@@ -7,7 +7,6 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import {
   Card,
-  CardDescription,
   CardFooter,
   CardHeader,
   CardImage,
@@ -17,14 +16,7 @@ import { Product } from "@/lib/products";
 
 export type Props = HTMLAttributes<HTMLDivElement> & Product;
 
-export default function ProductCard({
-  name,
-  description,
-  img,
-  tags,
-  url,
-  ...props
-}: Props) {
+export default function ProductCard({ name, img, tags, url, ...props }: Props) {
   return (
     <Card {...props}>
       <CardImage>
@@ -45,7 +37,6 @@ export default function ProductCard({
           ))}
         </div>
         <CardTitle>{name}</CardTitle>
-        <CardDescription>{description}</CardDescription>
       </CardHeader>
 
       <CardFooter>
