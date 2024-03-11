@@ -10,7 +10,7 @@ import Link from "next/link";
 
 import BenefitCard from "@/components/benefit-card";
 import Hero from "@/components/hero";
-import ProductCard from "@/components/product-card";
+import ProductsGrid from "@/components/products-grid";
 import Testimonial from "@/components/testimonial";
 import { Button } from "@/components/ui/button";
 import { allProducts } from "@/lib/products";
@@ -115,11 +115,11 @@ export default function Home() {
             </p>
           </header>
           <div className="space-y-4">
-            <div className="grid grid-cols-[repeat(auto-fit,minmax(20ch,1fr))] gap-8">
-              {allProducts.slice(0, 3).map((product, i) => (
-                <ProductCard className="mb-4" key={i} {...product} />
-              ))}
-            </div>
+            <ProductsGrid
+              as="div"
+              gridMode="fit"
+              products={allProducts.slice(0, 3)}
+            />
             <div className="flex justify-center">
               <Button asChild size="lg" className="max-md:w-full">
                 <Link href="/catalogo">Ver todos los productos</Link>

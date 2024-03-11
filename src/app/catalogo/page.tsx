@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 
-import ProductCard from "@/components/product-card";
+import ProductsGrid from "@/components/products-grid";
 import { allProducts } from "@/lib/products";
 
 const title = "Catálogo";
@@ -22,11 +22,7 @@ export default function Products() {
         <h1>{title}</h1>
         <p>{description}</p>
       </header>
-      <main className="grid grid-cols-[repeat(auto-fill,minmax(20ch,1fr))] gap-8">
-        {allProducts.map((product, i) => (
-          <ProductCard key={i} {...product} />
-        ))}
-      </main>
+      <ProductsGrid as="main" products={allProducts} />
     </main>
   );
 }
