@@ -20,6 +20,14 @@ export const allProducts: Product[] = products.sort((a, b) => {
 
 export const allProductsSlugs = allProducts.map(({ slug }) => ({ slug }));
 
+const allProductTagsSet = new Set<string>();
+
+allProducts.forEach(({ tags }) => {
+  tags.forEach((tag) => allProductTagsSet.add(tag));
+});
+
+export const allProductTags = Array.from(allProductTagsSet);
+
 export function findProduct(slug: string) {
   const product = allProducts.find((s) => s.slug === slug);
 

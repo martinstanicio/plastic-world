@@ -18,12 +18,25 @@ export default function ProductsGrid({
   gridMode = "fill",
   products,
 }: Props) {
-  const searchParams = new URLSearchParams(useSearchParams());
+  const params = new URLSearchParams(useSearchParams());
 
-  const tag = searchParams.has("categoria") && searchParams.get("categoria");
-  const search = searchParams.has("busqueda") && searchParams.get("busqueda");
+  const tagList = params.has("categoria") && params.getAll("categoria");
+  const search = params.has("busqueda") && params.get("busqueda");
 
-  const filterTag = ({ tags }: Product) => (!tag ? true : tags.includes(tag));
+  const filterTag = ({ tags }: Product) => {
+    if (!tagList) return true;
+
+    let tagsAreInTagList = true;
+
+    for (const tag of tagList) {
+      if (tags.includes(tag)) continue;
+
+      tagsAreInTagList = false;
+      break;
+    }
+
+    return tagsAreInTagList;
+  };
 
   const filterSearch = ({ name }: Product) => {
     if (!search) return true;
