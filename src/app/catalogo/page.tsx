@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 
 import ProductsGrid from "@/components/products-grid";
+import SearchControls from "@/components/search-controls";
 import { allProducts } from "@/lib/products";
 
 const title = "Catálogo";
@@ -22,6 +23,7 @@ export default function Products() {
         <h1>{title}</h1>
         <p>{description}</p>
       </header>
+      <SearchControls />
       <ProductsGrid as="main" products={allProducts} />
     </main>
   );
