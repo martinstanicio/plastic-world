@@ -1,4 +1,4 @@
-import { HTMLAttributes, forwardRef } from "react";
+import { HTMLAttributes } from "react";
 
 import Image from "next/image";
 
@@ -18,9 +18,15 @@ export type Props = HTMLAttributes<HTMLDivElement> & {
   children: React.ReactNode;
 };
 
-const Testimonial = forwardRef<HTMLDivElement, Props>(
-  ({ name, role, img, children, ...props }, ref) => (
-    <Card ref={ref} {...props}>
+export default function Testimonial({
+  name,
+  role,
+  img,
+  children,
+  ...props
+}: Props) {
+  return (
+    <Card {...props}>
       <CardHeader className=" items-center space-x-0">
         <div className="relative aspect-square h-24">
           <Image
@@ -39,8 +45,5 @@ const Testimonial = forwardRef<HTMLDivElement, Props>(
         <CardDescription>{role}</CardDescription>
       </CardFooter>
     </Card>
-  ),
-);
-Testimonial.displayName = "Testimonial";
-
-export default Testimonial;
+  );
+}

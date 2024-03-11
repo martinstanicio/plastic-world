@@ -1,4 +1,4 @@
-import { HTMLAttributes, forwardRef } from "react";
+import { HTMLAttributes } from "react";
 
 import Image from "next/image";
 import Link from "next/link";
@@ -17,9 +17,16 @@ import { Product } from "@/lib/products";
 
 export type Props = HTMLAttributes<HTMLDivElement> & Product;
 
-const ProductCard = forwardRef<HTMLDivElement, Props>(
-  ({ name, description, img, tags, url, ...props }, ref) => (
-    <Card ref={ref} {...props}>
+export default function ProductCard({
+  name,
+  description,
+  img,
+  tags,
+  url,
+  ...props
+}: Props) {
+  return (
+    <Card {...props}>
       <CardImage>
         <Image
           src={img}
@@ -38,22 +45,14 @@ const ProductCard = forwardRef<HTMLDivElement, Props>(
           ))}
         </div>
         <CardTitle>{name}</CardTitle>
-        <CardDescription>
-          <p>{description}</p>
-        </CardDescription>
+        <CardDescription>{description}</CardDescription>
       </CardHeader>
 
-      <CardFooter className="flex gap-4">
-        <Button asChild>
-          <Link href="#">Agregar al carrito</Link>
-        </Button>
+      <CardFooter>
         <Button asChild>
           <Link href={url}>Ver producto</Link>
         </Button>
       </CardFooter>
     </Card>
-  ),
-);
-ProductCard.displayName = "ProductCard";
-
-export default ProductCard;
+  );
+}
