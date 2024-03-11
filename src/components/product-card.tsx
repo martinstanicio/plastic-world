@@ -16,7 +16,13 @@ import { Product } from "@/lib/products";
 
 export type Props = HTMLAttributes<HTMLDivElement> & Product;
 
-export default function ProductCard({ name, img, tags, url, ...props }: Props) {
+export default function ProductCard({
+  slug,
+  name,
+  img,
+  tags,
+  ...props
+}: Props) {
   return (
     <Card {...props}>
       <CardImage>
@@ -41,7 +47,7 @@ export default function ProductCard({ name, img, tags, url, ...props }: Props) {
 
       <CardFooter>
         <Button asChild>
-          <Link href={url}>Ver producto</Link>
+          <Link href={`/catalogo/${slug}`}>Ver producto</Link>
         </Button>
       </CardFooter>
     </Card>

@@ -13,7 +13,7 @@ import Hero from "@/components/hero";
 import ProductCard from "@/components/product-card";
 import Testimonial from "@/components/testimonial";
 import { Button } from "@/components/ui/button";
-import { featuredProducts } from "@/lib/products";
+import { allProducts } from "@/lib/products";
 
 export default function Home() {
   return (
@@ -116,7 +116,7 @@ export default function Home() {
           </header>
           <div className="space-y-4">
             <div className="mx-auto grid grid-cols-[repeat(auto-fit,minmax(25ch,1fr))] grid-rows-3 gap-x-4 overflow-y-hidden [grid-auto-rows:0] sm:grid-rows-1">
-              {featuredProducts.map((product, i) => (
+              {allProducts.slice(0, 3).map((product, i) => (
                 <ProductCard className="mb-4" key={i} {...product} />
               ))}
             </div>

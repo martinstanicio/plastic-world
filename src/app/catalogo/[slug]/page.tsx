@@ -12,7 +12,9 @@ export interface Props {
 }
 
 export function generateMetadata({ params }: Props) {
-  const { name, url } = findProduct(params.slug);
+  const { slug, name } = findProduct(params.slug);
+
+  const url = `/catalogo/${slug}`;
 
   return {
     title: name,

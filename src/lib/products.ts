@@ -1,19 +1,24 @@
+import products from "~/products";
+
 import { notFound } from "next/navigation";
 
 export type Product = {
   slug: string;
   name: string;
-  description: string;
+  description: string[];
   img: string;
   tags: string[];
-  url: string;
 };
 
-export const allProducts: Product[] = [];
+// sort products alphabetically (case-insensitive)
+export const allProducts: Product[] = products.sort((a, b) => {
+  const nameA = a.name.toLowerCase();
+  const nameB = b.name.toLowerCase();
+
+  return nameA.localeCompare(nameB);
+});
 
 export const allProductsSlugs = allProducts.map(({ slug }) => ({ slug }));
-
-export const featuredProducts: Product[] = [];
 
 export function findProduct(slug: string) {
   const product = allProducts.find((s) => s.slug === slug);
