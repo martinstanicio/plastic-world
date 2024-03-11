@@ -1,8 +1,5 @@
 import { Metadata } from "next";
 
-import ProductCard from "@/components/product-card";
-import { allProducts } from "@/lib/products";
-
 const title = "Sobre Nosotros";
 const description =
   "Un vistazo de la misión, visión y valores que guían a Madetodo Empresarial, nuestro equipo y nuestra historia, para que conozcas quiénes somos y cómo trabajamos para satisfacer tus necesidades.";
