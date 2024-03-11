@@ -22,7 +22,7 @@ export default function Products() {
         <h1>{title}</h1>
         <p>{description}</p>
       </header>
-      <main className="mx-auto grid grid-cols-[repeat(auto-fill,minmax(25ch,1fr))] gap-4">
+      <main className="grid grid-cols-[repeat(auto-fill,minmax(20ch,1fr))] gap-8">
         {allProducts.map((product, i) => (
           <ProductCard key={i} {...product} />
         ))}

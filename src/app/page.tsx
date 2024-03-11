@@ -115,7 +115,7 @@ export default function Home() {
             </p>
           </header>
           <div className="space-y-4">
-            <div className="mx-auto grid grid-cols-[repeat(auto-fit,minmax(25ch,1fr))] grid-rows-3 gap-x-4 overflow-y-hidden [grid-auto-rows:0] sm:grid-rows-1">
+            <div className="grid grid-cols-[repeat(auto-fit,minmax(20ch,1fr))] gap-8">
               {allProducts.slice(0, 3).map((product, i) => (
                 <ProductCard className="mb-4" key={i} {...product} />
               ))}
