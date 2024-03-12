@@ -65,4 +65,8 @@
   .prose {
     @apply mx-auto marker:prose-li:!font-bold;
   }
+
+  ::selection {
+    @apply bg-primary text-primary-foreground;
+  }
 }
