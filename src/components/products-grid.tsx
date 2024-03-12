@@ -1,8 +1,6 @@
 "use client";
 
-import { useSearchParams } from "next/navigation";
-
-import { Product } from "@/lib/products";
+import { Product, allProducts, useFilteredProducts } from "@/lib/products";
 import { cn } from "@/lib/utils";
 
 import ProductCard from "./product-card";
@@ -10,44 +8,19 @@ import ProductCard from "./product-card";
 export type Props = {
   as: keyof HTMLElementTagNameMap;
   gridMode?: "fit" | "fill";
-  products: Product[];
+  products?: Product[];
+  notInteractive?: boolean;
 };
 
 export default function ProductsGrid({
   as: AsElement,
   gridMode = "fill",
-  products,
+  products = allProducts,
+  notInteractive = false,
 }: Props) {
-  const params = new URLSearchParams(useSearchParams());
+  const filteredProducts = useFilteredProducts(products);
 
-  const tagList = params.has("categoria") && params.getAll("categoria");
-  const search = params.has("busqueda") && params.get("busqueda");
-
-  const filterTag = ({ tags }: Product) => {
-    if (!tagList) return true;
-
-    let tagsAreInTagList = true;
-
-    for (const tag of tagList) {
-      if (tags.includes(tag)) continue;
-
-      tagsAreInTagList = false;
-      break;
-    }
-
-    return tagsAreInTagList;
-  };
-
-  const filterSearch = ({ name }: Product) => {
-    if (!search) return true;
-
-    const normalizedName = name.toLowerCase();
-    const normalizedSearch = search.toLowerCase();
-
-    return normalizedName.includes(normalizedSearch);
-  };
-
-  const productsList = products.filter(filterTag).filter(filterSearch);
+  const productList = notInteractive ? products : filteredProducts;
 
   return (
     <AsElement
@@ -57,7 +30,7 @@ export default function ProductsGrid({
         gridMode === "fit" && "grid-cols-[repeat(auto-fit,minmax(20ch,1fr))]",
       )}
     >
-      {productsList.map((product, i) => (
+      {productList.map((product, i) => (
         <ProductCard key={i} {...product} />
       ))}
     </AsElement>

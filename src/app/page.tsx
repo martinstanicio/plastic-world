@@ -119,6 +119,7 @@ export default function Home() {
               as="div"
               gridMode="fit"
               products={allProducts.slice(0, 3)}
+              notInteractive
             />
             <div className="flex justify-center">
               <Button asChild size="lg" className="max-md:w-full">
