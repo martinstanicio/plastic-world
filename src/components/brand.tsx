@@ -44,7 +44,7 @@ export default function Brand({
       {...props}
     >
       <Logo className="h-10" />
-      <span className="font-bold tracking-wide text-foreground transition-colors sm:text-xl md:text-2xl">
+      <span className="font-bold tracking-wide text-foreground transition-colors sm:text-xl lg:text-2xl">
         Madetodo Empresarial
       </span>
     </Link>
