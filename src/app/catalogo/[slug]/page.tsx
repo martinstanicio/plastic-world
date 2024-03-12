@@ -26,30 +26,46 @@ export function generateMetadata({ params }: Props) {
 export default function ProductPage({ params }: Props) {
   const { name, description, img, tags } = findProduct(params.slug);
 
+  const link = new URL("https://api.whatsapp.com/send");
+  link.searchParams.append("phone", "5491171153288");
+  link.searchParams.append(
+    "text",
+    `Hola, estoy buscando hacer un regalo empresarial, ¿podrías darme más información sobre el producto "${name}", por favor?`,
+  );
+
   return (
-    <main className="container mx-auto max-w-prose space-y-8 py-8 md:max-w-6xl">
-      <header className="prose prose-a:no-underline">
-        <div className="aspect-[4/3] w-full">
-          <Image
-            src={img}
-            alt={name}
-            fill
-            className="!static rounded-md object-cover object-center"
-          />
-        </div>
-        <div className="relative flex flex-wrap gap-2">
-          {tags.map((tag, i) => (
-            <Badge key={i} variant="secondary">
-              {tag}
-            </Badge>
-          ))}
-        </div>
-        <h1>{name}</h1>
-        <Button className="w-full lg:hidden" asChild>
-          <Link href="#">¡Hacé tu pedido!</Link>
+    <main className="container mx-auto max-w-prose py-8 max-lg:space-y-8 lg:grid lg:max-w-6xl lg:grid-cols-12 lg:gap-8">
+      <div className="relative col-span-7 aspect-[4/3] w-full bg-secondary text-secondary-foreground">
+        <Image
+          src={img}
+          alt={name}
+          fill
+          priority
+          className="rounded-md object-cover object-center"
+        />
+      </div>
+      <div className="prose col-span-5 w-full prose-a:no-underline">
+        <header>
+          <div className="mb-4 flex flex-wrap gap-2">
+            {tags.map((tag, i) => (
+              <Link href={`/catalogo?categoria=${tag}`} key={i}>
+                <Badge variant="secondary">{tag}</Badge>
+              </Link>
+            ))}
+          </div>
+          <h1>{name}</h1>
+        </header>
+
+        {description.map((paragraph, i) => (
+          <p key={i}>{paragraph}</p>
+        ))}
+
+        <Button asChild>
+          <Link href={link} target="_blank">
+            ¡Pedí más información!
+          </Link>
         </Button>
-      </header>
-      <p>{description}</p>
+      </div>
     </main>
   );
 }
