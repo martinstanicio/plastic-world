@@ -1,3 +1,5 @@
+import { Suspense } from "react";
+
 import { Metadata } from "next";
 
 import ProductsGrid from "@/components/products-grid";
@@ -23,8 +25,10 @@ export default function Products() {
         <h1>{title}</h1>
         <p>{description}</p>
       </header>
-      <SearchControls />
-      <ProductsGrid as="main" products={allProducts} />
+      <Suspense>
+        <SearchControls />
+        <ProductsGrid as="main" products={allProducts} />
+      </Suspense>
     </main>
   );
 }
