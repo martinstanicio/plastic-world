@@ -26,8 +26,14 @@ export default function Products() {
         <p>{description}</p>
       </header>
       <Suspense>
-        <SearchControls />
-        <ProductsGrid as="main" products={allProducts} />
+        <div className="relative max-xl:space-y-8 xl:grid xl:grid-cols-4 xl:gap-16">
+          <SearchControls className="top-20 self-start xl:sticky" />
+          <ProductsGrid
+            as="main"
+            products={allProducts}
+            className="xl:order-first xl:col-span-3"
+          />
+        </div>
       </Suspense>
     </main>
   );

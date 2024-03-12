@@ -10,6 +10,7 @@ export type Props = {
   gridMode?: "fit" | "fill";
   products?: Product[];
   notInteractive?: boolean;
+  className?: string;
 };
 
 export default function ProductsGrid({
@@ -17,6 +18,7 @@ export default function ProductsGrid({
   gridMode = "fill",
   products = allProducts,
   notInteractive = false,
+  className,
 }: Props) {
   const filteredProducts = useFilteredProducts(products);
 
@@ -28,6 +30,7 @@ export default function ProductsGrid({
         "grid gap-8",
         gridMode === "fill" && "grid-cols-[repeat(auto-fill,minmax(20ch,1fr))]",
         gridMode === "fit" && "grid-cols-[repeat(auto-fit,minmax(20ch,1fr))]",
+        className,
       )}
     >
       {productList.map((product, i) => (
