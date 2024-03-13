@@ -11,6 +11,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import BenefitCard from "@/components/benefit-card";
+import BrandsWhoTrustUs from "@/components/brands-who-trust-us";
 import Hero from "@/components/hero";
 import ProductsGrid from "@/components/products-grid";
 import Testimonial from "@/components/testimonial";
@@ -133,23 +134,11 @@ export default function Home() {
           </div>
         </section>
         <div className="border-y bg-secondary text-secondary-foreground shadow-inner-y">
-          <section className="container max-w-prose py-8 md:max-w-6xl">
-            <header className="prose md:text-center">
+          <section className="container max-w-prose space-y-8 py-8 md:max-w-6xl">
+            <header className="prose text-center">
               <h2>Confían en nosotros</h2>
             </header>
-            <div className="flex flex-wrap justify-center gap-4">
-              {[
-                "/tsu.webp",
-                "/violetta.webp",
-                "/avon.webp",
-                "/gigot.webp",
-                "/quilmes.webp",
-                "/clarin.webp",
-                "/gestion-compartida.webp",
-              ].map((src, i) => (
-                <Image src={src} alt="" width={256} height={256} key={i} />
-              ))}
-            </div>
+            <BrandsWhoTrustUs />
           </section>
         </div>
         <div className="bg-primary">
