@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 
-import { ContactForm } from "@/components/contact-form";
+import ContactForm from "@/components/contact-form";
 import Map from "@/components/map";
 import SocialIcons from "@/components/social-icons";
 import { Separator } from "@/components/ui/separator";

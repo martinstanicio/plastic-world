@@ -30,7 +30,7 @@ const formSchema = z.object({
     .trim(),
 });
 
-export function ContactForm() {
+export default function ContactForm() {
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
   });
