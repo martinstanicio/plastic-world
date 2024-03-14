@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import { Badge } from "@/components/ui/badge";
+import Tag from "@/components/tag";
 import { Button } from "@/components/ui/button";
 import { allProductsSlugs, findProduct } from "@/lib/products";
 
@@ -48,9 +48,7 @@ export default function ProductPage({ params }: Props) {
         <header>
           <div className="mb-4 flex flex-wrap gap-2">
             {tags.map((tag, i) => (
-              <Link href={`/catalogo?categoria=${tag}`} key={i}>
-                <Badge variant="secondary">{tag}</Badge>
-              </Link>
+              <Tag value={tag} key={i} />
             ))}
           </div>
           <h1>{name}</h1>
