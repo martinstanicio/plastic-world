@@ -28,14 +28,24 @@ const formSchema = z.object({
     .string({ required_error: "Por favor ingrese su consulta." })
     .min(1, "Por favor ingrese un mensaje.")
     .trim(),
+  // honeypot field to avoid spam
+  favoriteColor: z.string().optional(),
 });
 
 export default function ContactForm() {
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
+    defaultValues: {
+      name: "",
+      message: "",
+      favoriteColor: "",
+    },
   });
 
-  function onSubmit(values: z.infer<typeof formSchema>) {
+  function onSubmit({ favoriteColor, ...values }: z.infer<typeof formSchema>) {
+    // `favoriteColor` is a hidden field, if it has a value it means a bot filled it in
+    if (favoriteColor) return;
+
     console.log(values);
   }
 
@@ -72,6 +82,18 @@ export default function ContactForm() {
                 Tu mensaje o consulta, lo que quieras comunicarnos.
               </FormDescription>
               <FormMessage />
+            </FormItem>
+          )}
+        />
+
+        <FormField
+          control={form.control}
+          name="favoriteColor"
+          render={({ field }) => (
+            <FormItem>
+              <FormControl>
+                <Input {...field} />
+              </FormControl>
             </FormItem>
           )}
         />
