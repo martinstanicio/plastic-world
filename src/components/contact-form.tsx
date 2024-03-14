@@ -90,9 +90,9 @@ export default function ContactForm() {
           control={form.control}
           name="favoriteColor"
           render={({ field }) => (
-            <FormItem>
+            <FormItem className="sr-only">
               <FormControl>
-                <Input {...field} />
+                <Input type="hidden" {...field} />
               </FormControl>
             </FormItem>
           )}
