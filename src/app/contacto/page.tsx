@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 
 import { ContactForm } from "@/components/contact-form";
+import Map from "@/components/map";
 import SocialIcons from "@/components/social-icons";
 import { Separator } from "@/components/ui/separator";
 
@@ -28,6 +29,8 @@ export default function Contacto() {
           brindarte la información y el apoyo que necesites.
         </p>
       </header>
+      <Separator />
+      <Map />
       <Separator />
       <section className="prose">
         <h2>Formulario</h2>
