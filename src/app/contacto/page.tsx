@@ -7,7 +7,7 @@ import { Separator } from "@/components/ui/separator";
 
 const title = "Contactanos";
 const description =
-  "Puedes encontrarnos en Facebook e Instagram para ver las últimas novedades. También puedes comunicarte con nosotros mediante WhatsApp.";
+  "Puedes encontrarnos en Facebook e Instagram para ver las últimas novedades. También puedes comunicarte con nosotros mediante WhatsApp, o el formulario que encontrarás a continuación.";
 const url = "/contacto";
 
 export const metadata: Metadata = {
