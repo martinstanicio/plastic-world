@@ -58,7 +58,7 @@ export default function Home() {
             />
           </div>
           <div className="prose prose-a:no-underline">
-            <h2>Quiénes somos</h2>
+            <h2>¿Quiénes somos?</h2>
             <p>
               Somos una empresa familiar dedicada a la{" "}
               <strong>
@@ -92,8 +92,9 @@ export default function Home() {
               img="https://placehold.co/100x100/png"
             >
               <q>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Tempora aspernatur maxime quis laborum soluta rerum.
+                Como agente de RRHH, siempre estoy buscando formas de agradecer
+                a nuestro equipo. Descubrir Madetodo nos permitió crear regalos
+                únicos y memorables que reflejan la esencia de nuestra marca.
               </q>
             </Testimonial>
             <Testimonial
@@ -102,60 +103,61 @@ export default function Home() {
               img="https://placehold.co/100x100/png"
             >
               <q>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam
-                laboriosam dicta sint quam. Ipsum reiciendis sunt animi tempora
-                eveniet temporibus commodi!
+                En Clarín, la eficiencia y la calidad son fundamentales en todo
+                lo que hacemos, Madetodo era lo que necesitabamos. Su gran
+                capacidad productiva nos permitió cumplir con todas nuestras
+                expectativas de manera impecable.
               </q>
             </Testimonial>
           </section>
         </div>
         <section className="container max-w-prose space-y-8 py-8 md:max-w-6xl">
-          <header className="prose md:text-center">
-            <h2>Productos destacados</h2>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam rem
-              sapiente id laudantium expedita aspernatur unde, eius natus.
-            </p>
+          <header className="prose text-center">
+            <h2>Confían en nosotros</h2>
           </header>
-          <div className="space-y-4">
-            <Suspense>
-              <ProductsGrid
-                as="div"
-                gridMode="fit"
-                products={allProducts.slice(0, 3)}
-                notInteractive
-              />
-            </Suspense>
-            <div className="flex justify-center">
-              <Button asChild size="lg" className="max-md:w-full">
-                <Link href="/catalogo">Ver todos los productos</Link>
-              </Button>
-            </div>
-          </div>
+          <BrandsWhoTrustUs />
         </section>
         <div className="border-y bg-secondary text-secondary-foreground shadow-inner-y">
           <section className="container max-w-prose space-y-8 py-8 md:max-w-6xl">
-            <header className="prose text-center">
-              <h2>Confían en nosotros</h2>
-            </header>
-            <BrandsWhoTrustUs />
-          </section>
-        </div>
-        <div className="bg-primary">
-          <section className="container max-w-prose space-y-4 py-8 md:max-w-6xl md:text-center">
-            <div className="dark prose text-primary-foreground">
-              <h2 className="text-primary-foreground">Contactanos</h2>
+            <header className="prose md:text-center">
+              <h2>Productos destacados</h2>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
-                ipsam repellendus soluta asperiores. At dolor veritatis,
-                exercitationem doloremque accusamus eaque.
+                Descubre nuestra selección de productos: calidad,
+                personalización y estilo en cada artículo para satisfacer tus
+                necesidades empresariales.
               </p>
+            </header>
+            <div className="space-y-4">
+              <Suspense>
+                <ProductsGrid
+                  as="div"
+                  gridMode="fit"
+                  products={allProducts.slice(0, 3)}
+                  notInteractive
+                />
+              </Suspense>
+              <div className="flex justify-center">
+                <Button asChild size="lg" className="max-md:w-full">
+                  <Link href="/catalogo">Ver todos los productos</Link>
+                </Button>
+              </div>
             </div>
-            <Button asChild variant="secondary" className="max-md:w-full">
-              <Link href="/contacto">Contacto</Link>
-            </Button>
           </section>
         </div>
+        <section className="container max-w-prose space-y-4 py-8 md:max-w-6xl md:text-center">
+          <div className="prose">
+            <h2>¿Listo para comenzar?</h2>
+            <p>
+              <strong>Ponte en contacto</strong> con nosotros hoy mismo para
+              descubrir cómo podemos ayudarte a crear{" "}
+              <strong>regalos empresariales personalizados y de calidad</strong>
+              . ¡Madetodo hace tus deseos realidad!
+            </p>
+          </div>
+          <Button asChild size="lg" className="max-md:w-full">
+            <Link href="/contacto">Contactanos</Link>
+          </Button>
+        </section>
       </main>
     </>
   );
