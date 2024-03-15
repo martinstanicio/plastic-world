@@ -27,7 +27,7 @@ export default function ProductPage({ params }: Props) {
   const { name, description, img, tags } = findProduct(params.slug);
 
   const link = new URL("https://api.whatsapp.com/send");
-  link.searchParams.append("phone", "5491171153288");
+  link.searchParams.append("phone", process.env.NEXT_PUBLIC_PHONE);
   link.searchParams.append(
     "text",
     `Hola, estoy buscando hacer un regalo empresarial, ¿podrías darme más información sobre el producto "${name}", por favor?`,
@@ -59,7 +59,7 @@ export default function ProductPage({ params }: Props) {
         ))}
 
         <Button asChild>
-          <Link href={link} target="_blank">
+          <Link href={link.toString()} target="_blank">
             ¡Pedí más información!
           </Link>
         </Button>
