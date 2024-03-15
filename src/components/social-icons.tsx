@@ -6,6 +6,7 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import { cn } from "@/lib/utils";
+import { getWhatsAppLink } from "@/lib/whatsapp";
 
 import { Button } from "./ui/button";
 
@@ -24,7 +25,7 @@ const social = [
   },
   {
     label: "WhatsApp",
-    href: "https://api.whatsapp.com/send?phone=5491171153288",
+    href: getWhatsAppLink(+process.env.NEXT_PUBLIC_PHONE).toString(),
     icon: faWhatsapp,
     color: "#25D366",
   },

@@ -4,6 +4,7 @@ import Link from "next/link";
 import Tag from "@/components/tag";
 import { Button } from "@/components/ui/button";
 import { allProductsSlugs, findProduct } from "@/lib/products";
+import { getWhatsAppLink } from "@/lib/whatsapp";
 
 export const generateStaticParams = () => allProductsSlugs;
 
@@ -26,10 +27,8 @@ export function generateMetadata({ params }: Props) {
 export default function ProductPage({ params }: Props) {
   const { name, description, img, tags } = findProduct(params.slug);
 
-  const link = new URL("https://api.whatsapp.com/send");
-  link.searchParams.append("phone", process.env.NEXT_PUBLIC_PHONE);
-  link.searchParams.append(
-    "text",
+  const link = getWhatsAppLink(
+    +process.env.NEXT_PUBLIC_PHONE,
     `Hola, estoy buscando hacer un regalo empresarial, ¿podrías darme más información sobre el producto "${name}", por favor?`,
   );
 
