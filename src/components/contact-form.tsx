@@ -4,6 +4,8 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import * as z from "zod";
 
+import { formatPhoneNumber, getWhatsAppLink } from "@/lib/whatsapp";
+
 import { Button } from "./ui/button";
 import {
   Form,
@@ -42,11 +44,20 @@ export default function ContactForm() {
     },
   });
 
-  function onSubmit({ favoriteColor, ...values }: z.infer<typeof formSchema>) {
+  function onSubmit({
+    name,
+    message,
+    favoriteColor,
+  }: z.infer<typeof formSchema>) {
     // `favoriteColor` is a hidden field, if it has a value it means a bot filled it in
     if (favoriteColor) return;
 
-    console.log(values);
+    const link = getWhatsAppLink(
+      +process.env.NEXT_PUBLIC_PHONE,
+      message + "\n\n" + `- ${name}`,
+    );
+
+    window.open(link.toString(), "_blank");
   }
 
   return (
@@ -99,6 +110,14 @@ export default function ContactForm() {
         />
 
         <Button type="submit">Enviar</Button>
+
+        <p>
+          ¿Estás teniendo problemas con el formulario? Podés comunicarte de
+          forma directa con nosotros mediante WhatsApp:{" "}
+          <a href={getWhatsAppLink(+process.env.NEXT_PUBLIC_PHONE).toString()}>
+            {formatPhoneNumber(+process.env.NEXT_PUBLIC_PHONE, 2, 1, 2)}
+          </a>
+        </p>
       </form>
     </Form>
   );

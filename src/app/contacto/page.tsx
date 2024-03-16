@@ -4,6 +4,7 @@ import ContactForm from "@/components/contact-form";
 import Map from "@/components/map";
 import SocialIcons from "@/components/social-icons";
 import { Separator } from "@/components/ui/separator";
+import { formatPhoneNumber, getWhatsAppLink } from "@/lib/whatsapp";
 
 const title = "Contactanos";
 const description =
@@ -22,7 +23,14 @@ export default function Contacto() {
     <main className="container max-w-prose space-y-8 py-8">
       <header className="prose">
         <h1>{title}</h1>
-        <p>{description}</p>
+        <p>
+          Puedes encontrarnos en Facebook e Instagram para ver las últimas
+          novedades. También puedes comunicarte con nosotros mediante WhatsApp (
+          <a href={getWhatsAppLink(+process.env.NEXT_PUBLIC_PHONE).toString()}>
+            {formatPhoneNumber(+process.env.NEXT_PUBLIC_PHONE, 2, 1, 2)}
+          </a>
+          ), o el formulario que encontrarás a continuación.
+        </p>
         <SocialIcons />
         <p>
           Nos comprometemos a responder tu mensaje lo antes posible, para
@@ -34,6 +42,11 @@ export default function Contacto() {
       <Separator />
       <section className="prose">
         <h2>Formulario</h2>
+        <p>
+          Al enviar el formulario serás redirijido a WhatsApp. En caso de tener
+          inconvenientes, puedes comunicarte mediante los medios detallados
+          arriba.
+        </p>
         <ContactForm />
       </section>
     </main>
