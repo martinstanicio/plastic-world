@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 
+import hero from "@/assets/hero.jpg";
+
 import { Button } from "./ui/button";
 
 export default function Hero() {
@@ -9,7 +11,7 @@ export default function Hero() {
       <div className="relative grid place-items-center md:order-last md:pb-16 md:pl-8 md:pr-4 md:pt-16">
         <svg
           viewBox="0 0 100 63"
-          className="absolute bottom-0 right-0 h-full max-lg:hidden"
+          className="absolute bottom-0 right-0 -z-10 h-full max-lg:hidden"
         >
           <path
             d="M99 3C99 3 82.5 3 80 13.5C75.9676 26.4784 86.5 41.5 70.5 54C55.7753 65.5037 41.5 38 20.5 49C11.9123 53.4983 10 63 10 63"
@@ -18,16 +20,14 @@ export default function Hero() {
             strokeLinecap="square"
           />
         </svg>
-        <div className="relative aspect-[4/3] w-full max-md:max-h-64 md:max-w-[30rem]">
-          <Image
-            src="https://placehold.co/800x600/png"
-            alt=""
-            fill
-            priority
-            className="object-cover object-center md:overflow-hidden md:rounded-md md:shadow-lg"
-            sizes="(min-width: 1120px) 480px, (min-width: 780px) 43.13vw, 100vw"
-          />
-        </div>
+        <Image
+          src={hero}
+          alt="Foto del frente de nuestro local en el puerto"
+          priority
+          placeholder="blur"
+          sizes="(min-width: 1120px) 480px, (min-width: 780px) 43.13vw, 100vw"
+          className="aspect-[4/3] bg-secondary object-cover object-center max-md:max-h-64 md:max-w-[30rem] md:rounded-md md:shadow-lg"
+        />
       </div>
       <div className="prose relative z-10 flex max-w-md flex-col justify-center px-4 pb-16 pt-8 prose-a:no-underline md:pr-0 md:pt-16">
         <h1 className="[text-wrap:balance]">
