@@ -25,7 +25,7 @@ export default function Hero() {
             fill
             priority
             className="object-cover object-center md:overflow-hidden md:rounded-md md:shadow-lg"
-            sizes="(min-width: 1020px) 384px, (min-width: 780px) calc(11.82vw + 266px), 100vw"
+            sizes="(min-width: 1120px) 480px, (min-width: 780px) 43.13vw, 100vw"
           />
         </div>
       </div>
