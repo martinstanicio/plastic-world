@@ -7,8 +7,8 @@ import { Button } from "./ui/button";
 
 export default function Hero() {
   return (
-    <section className="relative mx-auto grid max-w-6xl md:grid-cols-2">
-      <div className="relative grid place-items-center md:order-last md:pb-16 md:pl-8 md:pr-4 md:pt-16">
+    <section className="mx-auto grid max-w-6xl md:grid-cols-2">
+      <div className="relative grid place-items-center sm:pb-8 sm:pt-16 md:order-last md:px-4 md:py-16">
         <svg
           viewBox="0 0 100 63"
           className="absolute bottom-0 right-0 -z-10 h-full max-lg:hidden"
@@ -25,11 +25,11 @@ export default function Hero() {
           alt="Foto del frente de nuestro local en el puerto"
           priority
           placeholder="blur"
-          sizes="(min-width: 1120px) 480px, (min-width: 780px) 43.13vw, 100vw"
-          className="aspect-[4/3] bg-secondary object-cover object-center max-md:max-h-64 md:max-w-[30rem] md:rounded-md md:shadow-lg"
+          sizes="(min-width: 1100px) 480px, (min-width: 780px) calc(40.67vw + 41px), (min-width: 640px) 480px, 100vw"
+          className="aspect-[4/3] w-full bg-secondary object-cover object-center max-sm:max-h-64 sm:max-w-[30rem] sm:rounded-md sm:shadow-lg"
         />
       </div>
-      <div className="prose relative z-10 flex max-w-md flex-col justify-center px-4 pb-16 pt-8 prose-a:no-underline md:pr-0 md:pt-16">
+      <div className="prose z-10 flex max-w-md flex-col justify-center px-4 pb-16 pt-8 prose-a:no-underline md:pr-0 md:pt-16">
         <h1 className="[text-wrap:balance]">
           Encontrá el regalo empresarial perfecto con{" "}
           <span className="text-primary">Madetodo</span>
