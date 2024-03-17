@@ -13,7 +13,6 @@ const url = "/sobre-nosotros";
 export const metadata: Metadata = {
   title,
   description,
-  alternates: { canonical: url },
   openGraph: { title, description, url },
 };
 

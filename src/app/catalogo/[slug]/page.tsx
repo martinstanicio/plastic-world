@@ -19,7 +19,6 @@ export function generateMetadata({ params }: Props) {
 
   return {
     title: name,
-    alternates: { canonical: url },
     openGraph: { title: name, url },
   };
 }

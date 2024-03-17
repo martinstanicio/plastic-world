@@ -14,7 +14,6 @@ const url = "/catalogo";
 export const metadata: Metadata = {
   title,
   description,
-  alternates: { canonical: url },
   openGraph: { title, description, url },
 };
 

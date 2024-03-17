@@ -23,7 +23,6 @@ export const metadata: Metadata = {
   keywords,
   creator: "Martín Stanicio",
   generator: "Next.js",
-  alternates: { canonical: "/" },
   openGraph: {
     siteName,
     title,
