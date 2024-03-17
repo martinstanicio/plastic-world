@@ -1,4 +1,9 @@
 import { Metadata } from "next";
+import Image from "next/image";
+
+import image01 from "@/assets/about-us-01.png";
+import image02 from "@/assets/about-us-02.png";
+import image03 from "@/assets/about-us-03.jpg";
 
 const title = "Sobre Nosotros";
 const description =
@@ -43,12 +48,35 @@ export default function Products() {
           facilitaban gran variedad y cantidad de artículos debido a su{" "}
           <strong>siempre creciente e innovadora tecnología</strong>.
         </p>
+        <figure>
+          <Image
+            src={image01}
+            alt="Los inicios de nuestro local en el puerto, aún bastante básico, sin muchas decoraciones, y con mucha mercadería afuera."
+            sizes="auto"
+            placeholder="blur"
+            className="rounded-md bg-secondary"
+          />
+          <figcaption>Los inicios de nuestro local en el puerto.</figcaption>
+        </figure>
         <p>
           Tras años de ser proveedora de varios negocios del{" "}
           <strong>Puerto de Frutos de Tigre</strong>, llegó por primera vez en
           su trayectoria a abrir su primer local de venta al público en el
           mencionado centro comercial a cielo abierto.
         </p>
+        <figure>
+          <Image
+            src={image02}
+            alt="El interior de nuestro local hace unos años, repleto de decenas de productos diferentes, incluyendo tablas de madera, utensilios, platos, relojes, banquetas, y cajones, entre muchas otras cosas."
+            sizes="auto"
+            placeholder="blur"
+            className="rounded-md bg-secondary"
+          />
+          <figcaption>
+            El interior de nuestro local hace unos años, repleto de decenas de
+            productos diferentes.
+          </figcaption>
+        </figure>
         <p>
           Desde sus inicios a la fecha Madetodo ha producido{" "}
           <strong>gran variedad de artículos</strong> y ha incorporado
@@ -56,6 +84,19 @@ export default function Products() {
           gusto de todos sus consumidores. Anexando a sus productos en madera
           una amplia línea de productos para la parrilla y accesorios.
         </p>
+        <figure>
+          <Image
+            src={image03}
+            alt="Nuestro local actualmente, con muchos productos nuevos, no solo en madera, sino también decoraciones de tela, termos, y muchas otras ideas innovadoras."
+            sizes="auto"
+            placeholder="blur"
+            className="rounded-md bg-secondary"
+          />
+          <figcaption>
+            Nuestro local actualmente, con muchos productos nuevos y lleno de
+            creatividad.
+          </figcaption>
+        </figure>
         <p>
           También está tecnología le permite ofrecer el{" "}
           <strong>servicio de grabado laser</strong> para personalizar los
