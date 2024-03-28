@@ -3,6 +3,7 @@
 import { Product, allProducts, useFilteredProducts } from "@/lib/products";
 import { cn } from "@/lib/utils";
 
+import CustomProductsCard from "./custom-products-card";
 import ProductCard from "./product-card";
 
 export type Props = {
@@ -33,6 +34,8 @@ export default function ProductsGrid({
         className,
       )}
     >
+      <CustomProductsCard className="col-span-full" />
+
       {productList.map((product, i) => (
         <ProductCard key={i} {...product} />
       ))}
