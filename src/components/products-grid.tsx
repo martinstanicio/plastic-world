@@ -11,6 +11,7 @@ export type Props = {
   gridMode?: "fit" | "fill";
   products?: Product[];
   notInteractive?: boolean;
+  hideCustomProductsCard?: boolean;
   className?: string;
 };
 
@@ -19,6 +20,7 @@ export default function ProductsGrid({
   gridMode = "fill",
   products = allProducts,
   notInteractive = false,
+  hideCustomProductsCard = false,
   className,
 }: Props) {
   const filteredProducts = useFilteredProducts(products);
@@ -34,7 +36,9 @@ export default function ProductsGrid({
         className,
       )}
     >
-      <CustomProductsCard className="col-span-full" />
+      {!hideCustomProductsCard && (
+        <CustomProductsCard className="col-span-full" />
+      )}
 
       {productList.map((product, i) => (
         <ProductCard key={i} {...product} />
