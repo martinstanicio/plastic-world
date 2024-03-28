@@ -8,7 +8,6 @@ import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { useFilteredProducts, useProductTags } from "@/lib/products";
 
 import { Button } from "./ui/button";
-import { Label } from "./ui/label";
 
 export default function FilterBar() {
   const productTags = useProductTags(useFilteredProducts());
