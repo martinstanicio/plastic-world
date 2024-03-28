@@ -53,7 +53,7 @@ export default function CustomProductsCard({ className, ...props }: Props) {
       <CardFooter className="flex flex-wrap gap-4">
         <Button className="max-sm:w-full" asChild>
           <Link
-            href={getWhatsAppLink(+process.env.NEXT_PUBLIC_PHONE)}
+            href={getWhatsAppLink(+process.env.NEXT_PUBLIC_PHONE).toString()}
             target="_blank"
           >
             Realizar pedido

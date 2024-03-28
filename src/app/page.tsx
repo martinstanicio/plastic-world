@@ -126,7 +126,9 @@ export default function Home() {
                 Descubre algunos de nuestros productos más vendidos, o envíanos
                 tu{" "}
                 <Link
-                  href={getWhatsAppLink(+process.env.NEXT_PUBLIC_PHONE)}
+                  href={getWhatsAppLink(
+                    +process.env.NEXT_PUBLIC_PHONE,
+                  ).toString()}
                   target="_blank"
                   className="font-bold text-primary"
                 >
