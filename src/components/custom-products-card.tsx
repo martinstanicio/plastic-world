@@ -50,14 +50,18 @@ export default function CustomProductsCard({ className, ...props }: Props) {
         </CardDescription>
       </CardHeader>
 
-      <CardFooter>
-        <Button asChild>
+      <CardFooter className="flex flex-wrap gap-4">
+        <Button className="max-sm:w-full" asChild>
           <Link
             href={getWhatsAppLink(+process.env.NEXT_PUBLIC_PHONE)}
             target="_blank"
           >
             Realizar pedido
           </Link>
+        </Button>
+
+        <Button variant="secondary" className="max-sm:w-full" asChild>
+          <Link href="/contacto">Otros medios de contacto</Link>
         </Button>
       </CardFooter>
     </Card>
