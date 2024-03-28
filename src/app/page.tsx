@@ -17,6 +17,7 @@ import ProductsGrid from "@/components/products-grid";
 import Testimonial from "@/components/testimonial";
 import { Button } from "@/components/ui/button";
 import { allProducts } from "@/lib/products";
+import { getWhatsAppLink } from "@/lib/whatsapp";
 
 export default function Home() {
   return (
@@ -122,9 +123,16 @@ export default function Home() {
             <header className="prose md:text-center">
               <h2>Productos destacados</h2>
               <p>
-                Descubre nuestra selección de productos: calidad,
-                personalización y estilo en cada artículo para satisfacer tus
-                necesidades empresariales.
+                Descubre algunos de nuestros productos más vendidos, o envíanos
+                tu{" "}
+                <Link
+                  href={getWhatsAppLink(+process.env.NEXT_PUBLIC_PHONE)}
+                  target="_blank"
+                  className="font-bold text-primary"
+                >
+                  pedido personalizado
+                </Link>{" "}
+                y Madetodo Empresarial lo hace realidad.
               </p>
             </header>
             <div className="space-y-4">
