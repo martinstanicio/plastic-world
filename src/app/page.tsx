@@ -5,8 +5,6 @@ import {
   faTruck,
 } from "@fortawesome/free-solid-svg-icons";
 
-import { Suspense } from "react";
-
 import Image from "next/image";
 import Link from "next/link";
 
@@ -136,15 +134,13 @@ export default function Home() {
               </p>
             </header>
             <div className="space-y-4">
-              <Suspense>
-                <ProductsGrid
-                  as="div"
-                  gridMode="fit"
-                  products={allProducts.slice(0, 3)}
-                  notInteractive
-                  hideCustomProductsCard
-                />
-              </Suspense>
+              <ProductsGrid
+                as="div"
+                gridMode="fit"
+                products={allProducts.slice(0, 3)}
+                notInteractive
+                hideCustomProductsCard
+              />
               <div className="flex justify-center">
                 <Button asChild size="lg" className="max-md:w-full">
                   <Link href="/catalogo">Ver todos los productos</Link>
