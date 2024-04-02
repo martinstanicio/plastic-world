@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import { fontFamily } from "tailwindcss/defaultTheme";
 
 const config = {
   darkMode: ["class"],
@@ -70,6 +71,10 @@ const config = {
       boxShadow: {
         "inner-y":
           "inset 0 2px 4px 0 rgb(0 0 0 / 0.05), inset 0 -2px 4px 0 rgb(0 0 0 / 0.05)",
+      },
+      fontFamily: {
+        body: ["var(--font-body)", ...fontFamily.sans],
+        display: ["var(--font-display)", ...fontFamily.serif],
       },
     },
   },
