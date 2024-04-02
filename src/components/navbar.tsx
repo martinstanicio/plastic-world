@@ -49,7 +49,7 @@ export default function Navbar() {
         </SheetTrigger>
         <SheetContent className="flex flex-col items-center justify-between gap-8">
           <SheetHeader>
-            <Brand className="flex-col text-center" />
+            <Brand className="flex-col text-center" bigLogo />
           </SheetHeader>
 
           <NavigationMenu className="flex-initial">
