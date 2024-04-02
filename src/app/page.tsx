@@ -61,22 +61,18 @@ export default function Home() {
           <div className="prose prose-a:no-underline">
             <h2>¿Quiénes somos?</h2>
             <p>
-              Somos una empresa familiar dedicada a la{" "}
-              <strong>
-                producción de artículos de madera y elementos de parrilla
-              </strong>
-              . Si estás buscando hacer un regalo empresarial, Madetodo es el
-              lugar indicado.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa,
+              deserunt reprehenderit culpa illum nulla optio assumenda veritatis
+              ea, inventore laboriosam dolorum placeat aliquid aliquam.
             </p>
             <p>
-              Ofrecemos productos de <strong>alta calidad</strong>, capacidad de{" "}
-              <strong>producción masiva</strong>, y un servicio de
-              personalización de productos mediante{" "}
-              <strong>grabado láser</strong>.
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non,
+              debitis. Expedita, praesentium debitis animi porro dolores
+              accusantium impedit eligendi magni a dolorem!
             </p>
             <p>
               <strong className="text-primary">
-                ¡Madetodo hace tus deseos realidad!
+                ¡Plastic World tiene lo que necesitás!
               </strong>
             </p>
 
@@ -93,9 +89,10 @@ export default function Home() {
               img="https://placehold.co/100x100/png"
             >
               <q>
-                Como agente de RRHH, siempre estoy buscando formas de agradecer
-                a nuestro equipo. Descubrir Madetodo nos permitió crear regalos
-                únicos y memorables que reflejan la esencia de nuestra marca.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. At
+                consectetur delectus esse quod optio. Minima cum dolorem
+                repellendus commodi omnis. Dolorem cum incidunt possimus facilis
+                id, et ducimus.
               </q>
             </Testimonial>
             <Testimonial
@@ -104,10 +101,9 @@ export default function Home() {
               img="https://placehold.co/100x100/png"
             >
               <q>
-                En Clarín, la eficiencia y la calidad son fundamentales en todo
-                lo que hacemos, Madetodo era lo que necesitabamos. Su gran
-                capacidad productiva nos permitió cumplir con todas nuestras
-                expectativas de manera impecable.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore
+                rem officia explicabo impedit odio, similique ipsum quia nihil
+                saepe asperiores distinctio quos, deserunt eum maiores.
               </q>
             </Testimonial>
           </section>
@@ -134,7 +130,7 @@ export default function Home() {
                 >
                   pedido personalizado
                 </Link>{" "}
-                y Madetodo Empresarial lo hace realidad.
+                y Plastic World lo hace realidad.
               </p>
             </header>
             <div className="space-y-4">
@@ -162,7 +158,7 @@ export default function Home() {
               <strong>Ponte en contacto</strong> con nosotros hoy mismo para
               descubrir cómo podemos ayudarte a crear{" "}
               <strong>regalos empresariales personalizados y de calidad</strong>
-              . ¡Madetodo hace tus deseos realidad!
+              . ¡Plastic World tiene lo que necesitás!
             </p>
           </div>
           <Button asChild size="lg" className="max-md:w-full">

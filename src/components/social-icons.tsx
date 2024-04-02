@@ -13,13 +13,13 @@ import { Button } from "./ui/button";
 const social = [
   {
     label: "Facebook",
-    href: "https://www.facebook.com/madetodo",
+    href: "https://www.facebook.com/",
     icon: faFacebook,
     color: "#0866FF",
   },
   {
     label: "Instagram",
-    href: "https://www.instagram.com/madetodo.tigre/",
+    href: "https://www.instagram.com/",
     icon: faInstagram,
     color: "#E4405F",
   },

@@ -10,7 +10,7 @@ export default function Footer() {
           <SocialIcons />
         </div>
         <div className="flex flex-col justify-between gap-4 text-center sm:flex-row">
-          <p>Madetodo Empresarial &copy; {new Date().getFullYear()}</p>
+          <p>Plastic World &copy; {new Date().getFullYear()}</p>
           <p>
             Página web diseñada por{" "}
             <a

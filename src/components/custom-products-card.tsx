@@ -45,7 +45,7 @@ export default function CustomProductsCard({ className, ...props }: Props) {
         <CardDescription className="text-base">
           ¿No tenemos el producto que estás buscando? Envíanos tu pedido
           personalizado y{" "}
-          <strong className="text-primary">Madetodo Empresarial</strong> lo hace
+          <strong className="text-primary">Plastic World</strong> lo hace
           realidad.
         </CardDescription>
       </CardHeader>

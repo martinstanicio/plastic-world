@@ -31,12 +31,12 @@ export default function Hero() {
       </div>
       <div className="prose z-10 flex max-w-md flex-col justify-center px-4 pb-16 pt-8 prose-a:no-underline md:pr-0 md:pt-16">
         <h1 className="[text-wrap:balance]">
-          Encontrá el regalo empresarial perfecto con{" "}
-          <span className="text-primary">Madetodo</span>
+          Encontrá lo que necesitás con{" "}
+          <span className="text-primary">Plastic World</span>
         </h1>
         <p className="lead mt-0 md:w-11/12">
-          Regalos empresariales <strong>únicos y personalizados</strong>, en la
-          cantidad que necesites. Simplificá tu búsqueda con nosotros.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. In, ducimus!
+          Eos optio nesciunt maiores dolores hic.
         </p>
         <div className="flex w-full gap-4">
           <Button asChild size="lg" className="max-md:flex-grow">
