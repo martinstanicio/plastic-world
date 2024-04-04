@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import hero from "@/assets/hero.jpg";
+import hero from "@/assets/hero.png";
 
 import { Button } from "./ui/button";
 

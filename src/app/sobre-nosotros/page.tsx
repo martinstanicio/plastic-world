@@ -3,7 +3,7 @@ import Image from "next/image";
 
 import image01 from "@/assets/about-us-01.png";
 import image02 from "@/assets/about-us-02.png";
-import image03 from "@/assets/about-us-03.jpg";
+import image03 from "@/assets/about-us-03.png";
 
 const title = "Sobre Nosotros";
 const description = "";
