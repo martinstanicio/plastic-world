@@ -17,7 +17,7 @@ export default function Hero() {
             d="M99 3C99 3 82.5 3 80 13.5C75.9676 26.4784 86.5 41.5 70.5 54C55.7753 65.5037 41.5 38 20.5 49C11.9123 53.4983 10 63 10 63"
             className="fill-none stroke-primary stroke-2"
             strokeDasharray="5"
-            strokeLinecap="square"
+            strokeLinecap="round"
           />
         </svg>
         <Image
