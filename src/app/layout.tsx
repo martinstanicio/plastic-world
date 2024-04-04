@@ -29,7 +29,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="es" suppressHydrationWarning>
-      <body className={cn(bodyFont.variable, displayFont.variable)}>
+      <body
+        className={cn(
+          bodyFont.variable,
+          displayFont.variable,
+          "grid min-h-screen grid-rows-[auto_1fr_auto]",
+        )}
+      >
         <Header />
         {children}
         <Footer />
