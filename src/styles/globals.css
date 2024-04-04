@@ -23,7 +23,7 @@
     --border: 240 5.9% 90%;
     --input: 240 5.9% 90%;
     --ring: 142.1 76.2% 36.3%;
-    --radius: 0.5rem;
+    --radius: 1rem;
   }
 
   .dark {
@@ -59,7 +59,7 @@
   }
 
   body {
-    @apply font-body bg-background text-foreground;
+    @apply bg-background font-body text-foreground;
   }
 
   .prose {
