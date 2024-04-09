@@ -82,33 +82,6 @@ export default function Home() {
           </div>
         </section>
         <div className="border-y bg-secondary text-secondary-foreground shadow-inner-y">
-          <section className="container grid max-w-prose grid-cols-1 gap-8 py-8 sm:grid-cols-2 md:max-w-6xl">
-            <Testimonial
-              name="María Hernandez"
-              role="Agente de recursos humanos de Violetta"
-              img="https://placehold.co/100x100/png"
-            >
-              <q>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. At
-                consectetur delectus esse quod optio. Minima cum dolorem
-                repellendus commodi omnis. Dolorem cum incidunt possimus facilis
-                id, et ducimus.
-              </q>
-            </Testimonial>
-            <Testimonial
-              name="Juan Perez"
-              role="Gerente en Clarín"
-              img="https://placehold.co/100x100/png"
-            >
-              <q>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore
-                rem officia explicabo impedit odio, similique ipsum quia nihil
-                saepe asperiores distinctio quos, deserunt eum maiores.
-              </q>
-            </Testimonial>
-          </section>
-        </div>
-        <div className="border-y bg-secondary text-secondary-foreground shadow-inner-y">
           <section className="container max-w-prose space-y-8 py-8 md:max-w-6xl">
             <header className="prose md:text-center">
               <h2>Productos destacados</h2>
