@@ -58,7 +58,7 @@ export default function ProductPage({ params }: Props) {
 
         <Button asChild>
           <Link href={link.toString()} target="_blank">
-            ¡Pedí más información!
+            Comprar
           </Link>
         </Button>
       </div>
