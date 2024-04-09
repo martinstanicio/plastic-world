@@ -108,12 +108,6 @@ export default function Home() {
             </Testimonial>
           </section>
         </div>
-        <section className="container max-w-prose space-y-8 py-8 md:max-w-6xl">
-          <header className="prose text-center">
-            <h2>Confían en nosotros</h2>
-          </header>
-          <BrandsWhoTrustUs />
-        </section>
         <div className="border-y bg-secondary text-secondary-foreground shadow-inner-y">
           <section className="container max-w-prose space-y-8 py-8 md:max-w-6xl">
             <header className="prose md:text-center">
