@@ -11,10 +11,8 @@ import Image from "next/image";
 import Link from "next/link";
 
 import BenefitCard from "@/components/benefit-card";
-import BrandsWhoTrustUs from "@/components/brands-who-trust-us";
 import Hero from "@/components/hero";
 import ProductsGrid from "@/components/products-grid";
-import Testimonial from "@/components/testimonial";
 import { Button } from "@/components/ui/button";
 import { allProducts } from "@/lib/products";
 import { getWhatsAppLink } from "@/lib/whatsapp";
