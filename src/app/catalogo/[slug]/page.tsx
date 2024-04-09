@@ -59,8 +59,9 @@ export default function ProductPage({ params }: Props) {
 
         <p className="text-3xl font-bold">{ARS.format(price)}</p>
 
+        <Button size="lg" className="max-sm:w-full" asChild>
           <Link href={link.toString()} target="_blank">
-            Comprar
+            Comprar producto
           </Link>
         </Button>
       </div>
