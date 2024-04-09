@@ -3,7 +3,6 @@
 import { Product, allProducts, useFilteredProducts } from "@/lib/products";
 import { cn } from "@/lib/utils";
 
-import CustomProductsCard from "./custom-products-card";
 import ProductCard from "./product-card";
 
 export type Props = {
@@ -11,7 +10,6 @@ export type Props = {
   gridMode?: "fit" | "fill";
   products?: Product[];
   notInteractive?: boolean;
-  hideCustomProductsCard?: boolean;
   className?: string;
 };
 
@@ -20,7 +18,6 @@ export default function ProductsGrid({
   gridMode = "fill",
   products = allProducts,
   notInteractive = false,
-  hideCustomProductsCard = false,
   className,
 }: Props) {
   const filteredProducts = useFilteredProducts(products);
@@ -36,10 +33,6 @@ export default function ProductsGrid({
         className,
       )}
     >
-      {!hideCustomProductsCard && (
-        <CustomProductsCard className="col-span-full" />
-      )}
-
       {productList.map((product, i) => (
         <ProductCard key={i} {...product} />
       ))}

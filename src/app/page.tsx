@@ -140,7 +140,6 @@ export default function Home() {
                   gridMode="fit"
                   products={allProducts.slice(0, 3)}
                   notInteractive
-                  hideCustomProductsCard
                 />
               </Suspense>
               <div className="flex justify-center">
