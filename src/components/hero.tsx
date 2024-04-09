@@ -30,7 +30,7 @@ export default function Hero() {
         />
       </div>
       <div className="prose z-10 flex max-w-md flex-col justify-center px-4 pb-16 pt-8 prose-a:no-underline md:pr-0 md:pt-16">
-        <h1 className="[text-wrap:balance]">
+        <h1 className="text-balance">
           Encontrá lo que necesitás con{" "}
           <span className="text-primary">Plastic World</span>
         </h1>
