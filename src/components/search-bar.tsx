@@ -31,7 +31,7 @@ export default function SearchBar() {
       <Input
         type="search"
         id="search"
-        placeholder="Planchetas..."
+        placeholder="Botellas..."
         onChange={(e) => handleSearch(e.target.value)}
         defaultValue={searchParams.get("busqueda")?.toString()}
       />
