@@ -11,6 +11,7 @@ import {
   CardImage,
   CardTitle,
 } from "@/components/ui/card";
+import { ARS } from "@/lib/currency";
 import { Product } from "@/lib/products";
 
 import Tag from "./tag";
@@ -20,6 +21,7 @@ export type Props = HTMLAttributes<HTMLDivElement> & Product;
 export default function ProductCard({
   slug,
   name,
+  price,
   img,
   tags,
   ...props
@@ -44,10 +46,11 @@ export default function ProductCard({
         <CardTitle>{name}</CardTitle>
       </CardHeader>
 
-      <CardFooter>
+      <CardFooter className="flex items-center justify-between gap-2">
         <Button asChild>
-          <Link href={`/catalogo/${slug}`}>Ver producto</Link>
+          <Link href={`/catalogo/${slug}`}>Comprar</Link>
         </Button>
+        <span className="font-bold">{ARS.format(price)}</span>
       </CardFooter>
     </Card>
   );
