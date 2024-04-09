@@ -3,6 +3,7 @@ import Link from "next/link";
 
 import Tag from "@/components/tag";
 import { Button } from "@/components/ui/button";
+import { ARS } from "@/lib/currency";
 import { allProductsSlugs, findProduct } from "@/lib/products";
 import { getWhatsAppLink } from "@/lib/whatsapp";
 
@@ -24,7 +25,7 @@ export function generateMetadata({ params }: Props) {
 }
 
 export default function ProductPage({ params }: Props) {
-  const { name, description, img, tags } = findProduct(params.slug);
+  const { name, description, price, img, tags } = findProduct(params.slug);
 
   const link = getWhatsAppLink(
     +process.env.NEXT_PUBLIC_PHONE,
@@ -56,7 +57,8 @@ export default function ProductPage({ params }: Props) {
           <p key={i}>{paragraph}</p>
         ))}
 
-        <Button asChild>
+        <p className="text-3xl font-bold">{ARS.format(price)}</p>
+
           <Link href={link.toString()} target="_blank">
             Comprar
           </Link>
