@@ -117,12 +117,11 @@ export default function Home() {
         </div>
         <section className="container max-w-prose space-y-4 py-8 md:max-w-6xl md:text-center">
           <div className="prose">
-            <h2>¿Listo para comenzar?</h2>
-            <p>
-              <strong>Ponte en contacto</strong> con nosotros hoy mismo para
-              descubrir cómo podemos ayudarte a crear{" "}
-              <strong>regalos empresariales personalizados y de calidad</strong>
-              . ¡Plastic World tiene lo que necesitás!
+            <h2>¿Tenés alguna duda?</h2>
+            <p className="text-balance">
+              No dudes en <strong>contactarnos</strong> hoy mismo para resolver
+              cualquier duda o inconveniente que tengas, ¡estamos encantados de
+              ayudarte!
             </p>
           </div>
           <Button asChild size="lg" className="max-md:w-full">
