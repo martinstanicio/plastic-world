@@ -1,8 +1,8 @@
 import {
-  faCheckCircle,
-  faList,
-  faRecycle,
-  faTruck,
+  faBox,
+  faClock,
+  faMagnifyingGlass,
+  faUser,
 } from "@fortawesome/free-solid-svg-icons";
 
 import { Suspense } from "react";
@@ -27,24 +27,24 @@ export default function Home() {
         <div className="border-y bg-secondary text-secondary-foreground shadow-inner-y">
           <section className="container grid max-w-prose grid-cols-1 gap-8 py-8 sm:grid-cols-2 md:max-w-6xl lg:grid-cols-4">
             <BenefitCard
-              title="Producción en masa"
-              description="Producción de cientos de miles de unidades"
-              icon={faList}
+              title="Variedad de productos"
+              description="Encontrá lo que estás buscando."
+              icon={faMagnifyingGlass}
+            />
+            <BenefitCard
+              title="Atención al cliente"
+              description="Atención personalizada."
+              icon={faUser}
+            />
+            <BenefitCard
+              title="Disponibilidad"
+              description="Abierto toda la semana."
+              icon={faClock}
             />
             <BenefitCard
               title="Envíos a domicilio"
               description="Envíos a todo el país."
-              icon={faTruck}
-            />
-            <BenefitCard
-              title="Primera calidad"
-              description="100% garantizado."
-              icon={faCheckCircle}
-            />
-            <BenefitCard
-              title="Ecológico"
-              description="Materiales 100% naturales"
-              icon={faRecycle}
+              icon={faBox}
             />
           </section>
         </div>
