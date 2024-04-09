@@ -22,11 +22,10 @@ export default function Products() {
     <main className="container max-w-prose space-y-8 py-8 md:max-w-6xl">
       <header className="prose md:text-center">
         <h1>{title}</h1>
-        <p>{description}</p>
       </header>
       <Suspense>
-        <div className="relative max-xl:space-y-8 xl:grid xl:grid-cols-4 xl:gap-16">
-          <SearchControls className="top-20 self-start xl:sticky" />
+        <div className="space-y-8">
+          <SearchControls className="top-32 self-start" />
           <ProductsGrid
             as="main"
             products={allProducts}
