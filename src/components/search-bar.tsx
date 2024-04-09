@@ -1,9 +1,11 @@
 "use client";
 
+import { faSearch } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 
 import { Input } from "./ui/input";
-import { Label } from "./ui/label";
 
 export default function SearchBar() {
   const searchParams = useSearchParams();
@@ -24,8 +26,8 @@ export default function SearchBar() {
   }
 
   return (
-    <div className="space-y-2">
-      <Label htmlFor="search">Búsqueda y filtros</Label>
+    <div className="flex items-center gap-4">
+      <FontAwesomeIcon icon={faSearch} />
       <Input
         type="search"
         id="search"
