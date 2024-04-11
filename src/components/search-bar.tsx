@@ -2,6 +2,7 @@
 
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Label } from "@radix-ui/react-label";
 
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 
@@ -27,6 +28,9 @@ export default function SearchBar() {
 
   return (
     <div className="flex items-center gap-4">
+      <Label htmlFor="search" className="sr-only">
+        Búsqueda y filtros
+      </Label>
       <FontAwesomeIcon icon={faSearch} />
       <Input
         type="search"
