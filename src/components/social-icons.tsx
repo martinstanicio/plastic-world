@@ -1,8 +1,4 @@
-import {
-  faFacebook,
-  faInstagram,
-  faWhatsapp,
-} from "@fortawesome/free-brands-svg-icons";
+import { faInstagram, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import { cn } from "@/lib/utils";
@@ -12,14 +8,8 @@ import { Button } from "./ui/button";
 
 const social = [
   {
-    label: "Facebook",
-    href: "https://www.facebook.com/",
-    icon: faFacebook,
-    color: "#0866FF",
-  },
-  {
     label: "Instagram",
-    href: "https://www.instagram.com/",
+    href: "https://www.instagram.com/plasticworld_ok",
     icon: faInstagram,
     color: "#E4405F",
   },
