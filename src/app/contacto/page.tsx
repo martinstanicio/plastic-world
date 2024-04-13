@@ -7,7 +7,7 @@ import { formatPhoneNumber, getWhatsAppLink } from "@/lib/whatsapp";
 
 const title = "Contactanos";
 const description =
-  "Puedes encontrarnos en Facebook e Instagram para ver las últimas novedades. También puedes comunicarte con nosotros mediante WhatsApp, o el formulario que encontrarás a continuación.";
+  "Puedes comunicarte con nosotros mediante WhatsApp, o el formulario que encontrarás a continuación. También puedes encontrarnos en Instagram.";
 const url = "/contacto";
 
 export const metadata: Metadata = {
@@ -22,12 +22,12 @@ export default function Contacto() {
       <header className="prose">
         <h1>{title}</h1>
         <p>
-          Puedes encontrarnos en Facebook e Instagram para ver las últimas
-          novedades. También puedes comunicarte con nosotros mediante WhatsApp (
+          Puedes comunicarte con nosotros mediante WhatsApp (
           <a href={getWhatsAppLink(+process.env.NEXT_PUBLIC_PHONE).toString()}>
             {formatPhoneNumber(+process.env.NEXT_PUBLIC_PHONE, 2, 1, 2)}
           </a>
-          ), o el formulario que encontrarás a continuación.
+          ), o el formulario que encontrarás a continuación. También puedes
+          encontrarnos en Instagram.
         </p>
         <SocialIcons />
         <p>
