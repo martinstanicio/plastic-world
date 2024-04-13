@@ -5,6 +5,7 @@ import { notFound, useSearchParams } from "next/navigation";
 export type Product = {
   slug: string;
   name: string;
+  code: string;
   description: string[];
   price: number;
   img: string;
