@@ -34,7 +34,7 @@ export default function ProductsGrid({
       )}
     >
       {productList.map((product, i) => (
-        <ProductCard key={i} {...product} />
+        <ProductCard key={i} priority={i === 0} {...product} />
       ))}
     </AsElement>
   );

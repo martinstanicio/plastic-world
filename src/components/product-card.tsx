@@ -16,7 +16,8 @@ import { Product } from "@/lib/products";
 
 import Tag from "./tag";
 
-export type Props = HTMLAttributes<HTMLDivElement> & Product;
+export type Props = HTMLAttributes<HTMLDivElement> &
+  Product & { priority?: boolean };
 
 export default function ProductCard({
   slug,
@@ -24,6 +25,7 @@ export default function ProductCard({
   price,
   img,
   tags,
+  priority = false,
   ...props
 }: Props) {
   return (
@@ -33,6 +35,7 @@ export default function ProductCard({
           src={img}
           alt={name}
           fill
+          priority={priority}
           className="bg-muted object-cover object-center"
         />
       </CardImage>
