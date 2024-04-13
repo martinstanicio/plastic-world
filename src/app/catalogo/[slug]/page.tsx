@@ -31,7 +31,8 @@ export default function ProductPage({ params }: Props) {
 
   const link = getWhatsAppLink(
     +process.env.NEXT_PUBLIC_PHONE,
-    `Hola, estoy buscando hacer un regalo empresarial, ¿podrías darme más información sobre el producto "${name}", por favor?`,
+    "Hola, estoy interesado en este producto, ¿podrías darme más información, por favor?\n" +
+      `- \`\`\`${code}\`\`\`: "${name}"`,
   );
 
   return (
