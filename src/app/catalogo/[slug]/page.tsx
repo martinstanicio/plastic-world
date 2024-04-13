@@ -34,7 +34,7 @@ export default function ProductPage({ params }: Props) {
 
   return (
     <main className="container mx-auto max-w-prose py-8 max-lg:space-y-8 lg:grid lg:max-w-6xl lg:grid-cols-12 lg:gap-8">
-      <div className="relative col-span-7 aspect-[4/3] w-full bg-secondary text-secondary-foreground">
+      <div className="relative col-span-7 aspect-square w-full bg-secondary text-secondary-foreground">
         <Image
           src={img}
           alt={name}
