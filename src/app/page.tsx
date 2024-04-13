@@ -14,10 +14,16 @@ import BenefitCard from "@/components/benefit-card";
 import Hero from "@/components/hero";
 import ProductsGrid from "@/components/products-grid";
 import { Button } from "@/components/ui/button";
-import { allProducts } from "@/lib/products";
+import { findProduct } from "@/lib/products";
 import { getWhatsAppLink } from "@/lib/whatsapp";
 
 export default function Home() {
+  const featuredProducts = [
+    findProduct("fuenton-oso"),
+    findProduct("jabonera-simple"),
+    findProduct("set-escolar-triple-formas"),
+  ];
+
   return (
     <div>
       <Hero />
@@ -103,7 +109,7 @@ export default function Home() {
                 <ProductsGrid
                   as="div"
                   gridMode="fit"
-                  products={allProducts.slice(0, 3)}
+                  products={featuredProducts}
                   notInteractive
                 />
               </Suspense>
