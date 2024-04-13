@@ -10,7 +10,7 @@ const products: Product[] = [
       "Fusce egestas neque quam. Cras auctor risus vitae aliquam auctor. Quisque eget mi non diam tincidunt semper. Integer ornare tortor et mi scelerisque, sit.",
     ],
     price: 1795,
-    img: "https://placehold.co/800x600/png",
+    img: "/productos/canasto-chico.jpg",
     tags: ["canastos"],
   },
   {
@@ -22,7 +22,7 @@ const products: Product[] = [
       "Fusce egestas neque quam. Cras auctor risus vitae aliquam auctor. Quisque eget mi non diam tincidunt semper. Integer ornare tortor et mi scelerisque, sit.",
     ],
     price: 2493,
-    img: "https://placehold.co/800x600/png",
+    img: "/productos/canasto-grande.jpg",
     tags: ["canastos"],
   },
   {
@@ -34,7 +34,7 @@ const products: Product[] = [
       "Fusce egestas neque quam. Cras auctor risus vitae aliquam auctor. Quisque eget mi non diam tincidunt semper. Integer ornare tortor et mi scelerisque, sit.",
     ],
     price: 2805,
-    img: "https://placehold.co/800x600/png",
+    img: "/productos/canasto-dos-partes.jpg",
     tags: ["canastos"],
   },
   {
@@ -46,7 +46,7 @@ const products: Product[] = [
       "Fusce egestas neque quam. Cras auctor risus vitae aliquam auctor. Quisque eget mi non diam tincidunt semper. Integer ornare tortor et mi scelerisque, sit.",
     ],
     price: 4001,
-    img: "https://placehold.co/800x600/png",
+    img: "/productos/caja-organizadora-calada-con-tapa-mediano.jpg",
     tags: ["canastos"],
   },
   {
@@ -58,7 +58,7 @@ const products: Product[] = [
       "Fusce egestas neque quam. Cras auctor risus vitae aliquam auctor. Quisque eget mi non diam tincidunt semper. Integer ornare tortor et mi scelerisque, sit.",
     ],
     price: 3640,
-    img: "https://placehold.co/800x600/png",
+    img: "/productos/caja-organizadora-calada-sin-tapa-mediano.jpg",
     tags: ["canastos"],
   },
   {
@@ -70,7 +70,7 @@ const products: Product[] = [
       "Fusce egestas neque quam. Cras auctor risus vitae aliquam auctor. Quisque eget mi non diam tincidunt semper. Integer ornare tortor et mi scelerisque, sit.",
     ],
     price: 4082.4,
-    img: "https://placehold.co/800x600/png",
+    img: "/productos/caja-organizadora-calada-con-tapa-grande.jpg",
     tags: ["canastos"],
   },
   {
@@ -82,7 +82,7 @@ const products: Product[] = [
       "Fusce egestas neque quam. Cras auctor risus vitae aliquam auctor. Quisque eget mi non diam tincidunt semper. Integer ornare tortor et mi scelerisque, sit.",
     ],
     price: 4001.2,
-    img: "https://placehold.co/800x600/png",
+    img: "/productos/caja-organizadora-calada-sin-tapa-grande.jpg",
     tags: ["canastos"],
   },
   {
@@ -94,7 +94,7 @@ const products: Product[] = [
       "Fusce egestas neque quam. Cras auctor risus vitae aliquam auctor. Quisque eget mi non diam tincidunt semper. Integer ornare tortor et mi scelerisque, sit.",
     ],
     price: 4566.8,
-    img: "https://placehold.co/800x600/png",
+    img: "/productos/cesto-para-ropa.jpg",
     tags: ["canastos"],
   },
   {
@@ -106,7 +106,7 @@ const products: Product[] = [
       "Fusce egestas neque quam. Cras auctor risus vitae aliquam auctor. Quisque eget mi non diam tincidunt semper. Integer ornare tortor et mi scelerisque, sit.",
     ],
     price: 3897.6,
-    img: "https://placehold.co/800x600/png",
+    img: "/productos/box-cuadrado.jpg",
     tags: ["canastos"],
   },
   {
@@ -118,7 +118,7 @@ const products: Product[] = [
       "Fusce egestas neque quam. Cras auctor risus vitae aliquam auctor. Quisque eget mi non diam tincidunt semper. Integer ornare tortor et mi scelerisque, sit.",
     ],
     price: 5194,
-    img: "https://placehold.co/800x600/png",
+    img: "/productos/box-rectangular.jpg",
     tags: ["canastos"],
   },
   {
@@ -130,7 +130,7 @@ const products: Product[] = [
       "Fusce egestas neque quam. Cras auctor risus vitae aliquam auctor. Quisque eget mi non diam tincidunt semper. Integer ornare tortor et mi scelerisque, sit.",
     ],
     price: 688.8,
-    img: "https://placehold.co/800x600/png",
+    img: "/productos/estuche-chico.jpg",
     tags: ["canastos"],
   },
   {
@@ -142,7 +142,7 @@ const products: Product[] = [
       "Fusce egestas neque quam. Cras auctor risus vitae aliquam auctor. Quisque eget mi non diam tincidunt semper. Integer ornare tortor et mi scelerisque, sit.",
     ],
     price: 2052.4,
-    img: "https://placehold.co/800x600/png",
+    img: "/productos/estuche-chico-con-dijes.jpg",
     tags: ["canastos"],
   },
   {
@@ -154,7 +154,7 @@ const products: Product[] = [
       "Fusce egestas neque quam. Cras auctor risus vitae aliquam auctor. Quisque eget mi non diam tincidunt semper. Integer ornare tortor et mi scelerisque, sit.",
     ],
     price: 786.8,
-    img: "https://placehold.co/800x600/png",
+    img: "/productos/estuche-mediano.jpg",
     tags: ["canastos"],
   },
   {
@@ -166,7 +166,7 @@ const products: Product[] = [
       "Fusce egestas neque quam. Cras auctor risus vitae aliquam auctor. Quisque eget mi non diam tincidunt semper. Integer ornare tortor et mi scelerisque, sit.",
     ],
     price: 2856,
-    img: "https://placehold.co/800x600/png",
+    img: "/productos/estuche-mediano-con-dijes.jpg",
     tags: ["canastos"],
   },
 
@@ -179,7 +179,7 @@ const products: Product[] = [
       "Fusce egestas neque quam. Cras auctor risus vitae aliquam auctor. Quisque eget mi non diam tincidunt semper. Integer ornare tortor et mi scelerisque, sit.",
     ],
     price: 2587.2,
-    img: "https://placehold.co/800x600/png",
+    img: "/productos/banquito-cuadrado.jpg",
     tags: ["banquetas"],
   },
   {
@@ -191,7 +191,7 @@ const products: Product[] = [
       "Fusce egestas neque quam. Cras auctor risus vitae aliquam auctor. Quisque eget mi non diam tincidunt semper. Integer ornare tortor et mi scelerisque, sit.",
     ],
     price: 2587.2,
-    img: "https://placehold.co/800x600/png",
+    img: "/productos/banquito-redondo.jpg",
     tags: ["banquetas"],
   },
   {
@@ -203,7 +203,7 @@ const products: Product[] = [
       "Fusce egestas neque quam. Cras auctor risus vitae aliquam auctor. Quisque eget mi non diam tincidunt semper. Integer ornare tortor et mi scelerisque, sit.",
     ],
     price: 2587.2,
-    img: "https://placehold.co/800x600/png",
+    img: "/productos/banquito-oso.jpg",
     tags: ["banquetas"],
   },
   {
@@ -215,7 +215,7 @@ const products: Product[] = [
       "Fusce egestas neque quam. Cras auctor risus vitae aliquam auctor. Quisque eget mi non diam tincidunt semper. Integer ornare tortor et mi scelerisque, sit.",
     ],
     price: 2587.2,
-    img: "https://placehold.co/800x600/png",
+    img: "/productos/banquito-gato.jpg",
     tags: ["banquetas"],
   },
   {
@@ -228,7 +228,7 @@ const products: Product[] = [
     ],
     // Revisar precio
     price: 80442,
-    img: "https://placehold.co/800x600/png",
+    img: "/productos/taburete-rhino.jpg",
     tags: ["banquetas"],
   },
   {
@@ -240,7 +240,7 @@ const products: Product[] = [
       "Fusce egestas neque quam. Cras auctor risus vitae aliquam auctor. Quisque eget mi non diam tincidunt semper. Integer ornare tortor et mi scelerisque, sit.",
     ],
     price: 2290.4,
-    img: "https://placehold.co/800x600/png",
+    img: "/productos/banqueta-rectangular-negra.jpg",
     tags: ["banquetas"],
   },
   {
@@ -252,7 +252,7 @@ const products: Product[] = [
       "Fusce egestas neque quam. Cras auctor risus vitae aliquam auctor. Quisque eget mi non diam tincidunt semper. Integer ornare tortor et mi scelerisque, sit.",
     ],
     price: 2721.6,
-    img: "https://placehold.co/800x600/png",
+    img: "/productos/banqueta-redonda-negra.jpg",
     tags: ["banquetas"],
   },
   {
@@ -264,7 +264,7 @@ const products: Product[] = [
       "Fusce egestas neque quam. Cras auctor risus vitae aliquam auctor. Quisque eget mi non diam tincidunt semper. Integer ornare tortor et mi scelerisque, sit.",
     ],
     price: 5580.4,
-    img: "https://placehold.co/800x600/png",
+    img: "/productos/banquito-con-respaldo.jpg",
     tags: ["banquetas"],
   },
   {
@@ -276,7 +276,7 @@ const products: Product[] = [
       "Fusce egestas neque quam. Cras auctor risus vitae aliquam auctor. Quisque eget mi non diam tincidunt semper. Integer ornare tortor et mi scelerisque, sit.",
     ],
     price: 2587.2,
-    img: "https://placehold.co/800x600/png",
+    img: "/productos/sillita-infantil-con-respaldo.jpg",
     tags: ["banquetas"],
   },
 
@@ -289,7 +289,7 @@ const products: Product[] = [
       "Fusce egestas neque quam. Cras auctor risus vitae aliquam auctor. Quisque eget mi non diam tincidunt semper. Integer ornare tortor et mi scelerisque, sit.",
     ],
     price: 5863.2,
-    img: "https://placehold.co/800x600/png",
+    img: "/productos/mesa-plastica-infantil.jpg",
     tags: ["mesas"],
   },
 
@@ -302,7 +302,7 @@ const products: Product[] = [
       "Fusce egestas neque quam. Cras auctor risus vitae aliquam auctor. Quisque eget mi non diam tincidunt semper. Integer ornare tortor et mi scelerisque, sit.",
     ],
     price: 1226.4,
-    img: "https://placehold.co/800x600/png",
+    img: "/productos/vaso-stark.jpg",
     tags: ["vasos"],
   },
   {
@@ -314,7 +314,7 @@ const products: Product[] = [
       "Fusce egestas neque quam. Cras auctor risus vitae aliquam auctor. Quisque eget mi non diam tincidunt semper. Integer ornare tortor et mi scelerisque, sit.",
     ],
     price: 1386,
-    img: "https://placehold.co/800x600/png",
+    img: "/productos/vaso-stark-con-brillo.jpg",
     tags: ["vasos"],
   },
   {
@@ -326,7 +326,7 @@ const products: Product[] = [
       "Fusce egestas neque quam. Cras auctor risus vitae aliquam auctor. Quisque eget mi non diam tincidunt semper. Integer ornare tortor et mi scelerisque, sit.",
     ],
     price: 728,
-    img: "https://placehold.co/800x600/png",
+    img: "/productos/vaso-sorbete-grande.jpg",
     tags: ["vasos"],
   },
   {
@@ -338,7 +338,7 @@ const products: Product[] = [
       "Fusce egestas neque quam. Cras auctor risus vitae aliquam auctor. Quisque eget mi non diam tincidunt semper. Integer ornare tortor et mi scelerisque, sit.",
     ],
     price: 658,
-    img: "https://placehold.co/800x600/png",
+    img: "/productos/vaso-sorbete-mediano.jpg",
     tags: ["vasos"],
   },
   {
@@ -350,7 +350,7 @@ const products: Product[] = [
       "Fusce egestas neque quam. Cras auctor risus vitae aliquam auctor. Quisque eget mi non diam tincidunt semper. Integer ornare tortor et mi scelerisque, sit.",
     ],
     price: 728,
-    img: "https://placehold.co/800x600/png",
+    img: "/productos/vaso-con-tapa-grande.jpg",
     tags: ["vasos"],
   },
   {
@@ -362,7 +362,7 @@ const products: Product[] = [
       "Fusce egestas neque quam. Cras auctor risus vitae aliquam auctor. Quisque eget mi non diam tincidunt semper. Integer ornare tortor et mi scelerisque, sit.",
     ],
     price: 658,
-    img: "https://placehold.co/800x600/png",
+    img: "/productos/vaso-con-tapa-mediano.jpg",
     tags: ["vasos"],
   },
   {
@@ -374,7 +374,7 @@ const products: Product[] = [
       "Fusce egestas neque quam. Cras auctor risus vitae aliquam auctor. Quisque eget mi non diam tincidunt semper. Integer ornare tortor et mi scelerisque, sit.",
     ],
     price: 750,
-    img: "https://placehold.co/800x600/png",
+    img: "/productos/vaso-decorado.jpg",
     tags: ["vasos"],
   },
   {
@@ -386,7 +386,7 @@ const products: Product[] = [
       "Fusce egestas neque quam. Cras auctor risus vitae aliquam auctor. Quisque eget mi non diam tincidunt semper. Integer ornare tortor et mi scelerisque, sit.",
     ],
     price: 840,
-    img: "https://placehold.co/800x600/png",
+    img: "/productos/vaso-largo-con-tapon.jpg",
     tags: ["vasos"],
   },
   {
@@ -398,7 +398,7 @@ const products: Product[] = [
       "Fusce egestas neque quam. Cras auctor risus vitae aliquam auctor. Quisque eget mi non diam tincidunt semper. Integer ornare tortor et mi scelerisque, sit.",
     ],
     price: 1092,
-    img: "https://placehold.co/800x600/png",
+    img: "/productos/taza-infantil.jpg",
     tags: ["vasos"],
   },
   {
@@ -410,7 +410,7 @@ const products: Product[] = [
       "Fusce egestas neque quam. Cras auctor risus vitae aliquam auctor. Quisque eget mi non diam tincidunt semper. Integer ornare tortor et mi scelerisque, sit.",
     ],
     price: 949.2,
-    img: "https://placehold.co/800x600/png",
+    img: "/productos/taza-acrilica-sin-papel.jpg",
     tags: ["vasos"],
   },
   {
@@ -422,7 +422,7 @@ const products: Product[] = [
       "Fusce egestas neque quam. Cras auctor risus vitae aliquam auctor. Quisque eget mi non diam tincidunt semper. Integer ornare tortor et mi scelerisque, sit.",
     ],
     price: 386.4,
-    img: "https://placehold.co/800x600/png",
+    img: "/productos/taza-grande.jpg",
     tags: ["vasos"],
   },
   {
@@ -434,7 +434,7 @@ const products: Product[] = [
       "Fusce egestas neque quam. Cras auctor risus vitae aliquam auctor. Quisque eget mi non diam tincidunt semper. Integer ornare tortor et mi scelerisque, sit.",
     ],
     price: 1022,
-    img: "https://placehold.co/800x600/png",
+    img: "/productos/vaso-grande-con-sticker.jpg",
     tags: ["vasos"],
   },
   {
@@ -446,7 +446,7 @@ const products: Product[] = [
       "Fusce egestas neque quam. Cras auctor risus vitae aliquam auctor. Quisque eget mi non diam tincidunt semper. Integer ornare tortor et mi scelerisque, sit.",
     ],
     price: 932.4,
-    img: "https://placehold.co/800x600/png",
+    img: "/productos/vaso-grande-con-frase.jpg",
     tags: ["vasos"],
   },
   {
@@ -458,7 +458,7 @@ const products: Product[] = [
       "Fusce egestas neque quam. Cras auctor risus vitae aliquam auctor. Quisque eget mi non diam tincidunt semper. Integer ornare tortor et mi scelerisque, sit.",
     ],
     price: 980,
-    img: "https://placehold.co/800x600/png",
+    img: "/productos/vaso-mediano-con-sticker.jpg",
     tags: ["vasos"],
   },
   {
@@ -470,7 +470,7 @@ const products: Product[] = [
       "Fusce egestas neque quam. Cras auctor risus vitae aliquam auctor. Quisque eget mi non diam tincidunt semper. Integer ornare tortor et mi scelerisque, sit.",
     ],
     price: 856.8,
-    img: "https://placehold.co/800x600/png",
+    img: "/productos/vaso-mediano-con-frase.jpg",
     tags: ["vasos"],
   },
   {
@@ -482,7 +482,7 @@ const products: Product[] = [
       "Fusce egestas neque quam. Cras auctor risus vitae aliquam auctor. Quisque eget mi non diam tincidunt semper. Integer ornare tortor et mi scelerisque, sit.",
     ],
     price: 1106,
-    img: "https://placehold.co/800x600/png",
+    img: "/productos/vaso-largo-tapon-con-sticker.jpg",
     tags: ["vasos"],
   },
   {
@@ -494,7 +494,7 @@ const products: Product[] = [
       "Fusce egestas neque quam. Cras auctor risus vitae aliquam auctor. Quisque eget mi non diam tincidunt semper. Integer ornare tortor et mi scelerisque, sit.",
     ],
     price: 649.6,
-    img: "https://placehold.co/800x600/png",
+    img: "/productos/taza-grande-con-sticker.jpg",
     tags: ["vasos"],
   },
   {
@@ -506,7 +506,7 @@ const products: Product[] = [
       "Fusce egestas neque quam. Cras auctor risus vitae aliquam auctor. Quisque eget mi non diam tincidunt semper. Integer ornare tortor et mi scelerisque, sit.",
     ],
     price: 145,
-    img: "https://placehold.co/800x600/png",
+    img: "/productos/vaso-chico.jpg",
     tags: ["vasos"],
   },
   {
@@ -518,7 +518,7 @@ const products: Product[] = [
       "Fusce egestas neque quam. Cras auctor risus vitae aliquam auctor. Quisque eget mi non diam tincidunt semper. Integer ornare tortor et mi scelerisque, sit.",
     ],
     price: 170,
-    img: "https://placehold.co/800x600/png",
+    img: "/productos/vaso-pinguino.jpg",
     tags: ["vasos"],
   },
   {
@@ -530,7 +530,7 @@ const products: Product[] = [
       "Fusce egestas neque quam. Cras auctor risus vitae aliquam auctor. Quisque eget mi non diam tincidunt semper. Integer ornare tortor et mi scelerisque, sit.",
     ],
     price: 386.4,
-    img: "https://placehold.co/800x600/png",
+    img: "/productos/vaso-cuenco-grill.jpg",
     tags: ["vasos"],
   },
   {
@@ -542,7 +542,7 @@ const products: Product[] = [
       "Fusce egestas neque quam. Cras auctor risus vitae aliquam auctor. Quisque eget mi non diam tincidunt semper. Integer ornare tortor et mi scelerisque, sit.",
     ],
     price: 436.8,
-    img: "https://placehold.co/800x600/png",
+    img: "/productos/vaso-pinta.jpg",
     tags: ["vasos"],
   },
   {
@@ -554,7 +554,7 @@ const products: Product[] = [
       "Fusce egestas neque quam. Cras auctor risus vitae aliquam auctor. Quisque eget mi non diam tincidunt semper. Integer ornare tortor et mi scelerisque, sit.",
     ],
     price: 481.6,
-    img: "https://placehold.co/800x600/png",
+    img: "/productos/taza-vintage.jpg",
     tags: ["vasos"],
   },
   {
@@ -566,7 +566,7 @@ const products: Product[] = [
       "Fusce egestas neque quam. Cras auctor risus vitae aliquam auctor. Quisque eget mi non diam tincidunt semper. Integer ornare tortor et mi scelerisque, sit.",
     ],
     price: 481.6,
-    img: "https://placehold.co/800x600/png",
+    img: "/productos/taza-love.jpg",
     tags: ["vasos"],
   },
   {
@@ -578,7 +578,7 @@ const products: Product[] = [
       "Fusce egestas neque quam. Cras auctor risus vitae aliquam auctor. Quisque eget mi non diam tincidunt semper. Integer ornare tortor et mi scelerisque, sit.",
     ],
     price: 453.6,
-    img: "https://placehold.co/800x600/png",
+    img: "/productos/taza-trebol.jpg",
     tags: ["vasos"],
   },
   {
@@ -590,7 +590,7 @@ const products: Product[] = [
       "Fusce egestas neque quam. Cras auctor risus vitae aliquam auctor. Quisque eget mi non diam tincidunt semper. Integer ornare tortor et mi scelerisque, sit.",
     ],
     price: 560,
-    img: "https://placehold.co/800x600/png",
+    img: "/productos/jarro-mug-con-tapa.jpg",
     tags: ["vasos"],
   },
   {
@@ -602,7 +602,7 @@ const products: Product[] = [
       "Fusce egestas neque quam. Cras auctor risus vitae aliquam auctor. Quisque eget mi non diam tincidunt semper. Integer ornare tortor et mi scelerisque, sit.",
     ],
     price: 481.6,
-    img: "https://placehold.co/800x600/png",
+    img: "/productos/jarro-capuchino.jpg",
     tags: ["vasos"],
   },
   {
@@ -614,7 +614,7 @@ const products: Product[] = [
       "Fusce egestas neque quam. Cras auctor risus vitae aliquam auctor. Quisque eget mi non diam tincidunt semper. Integer ornare tortor et mi scelerisque, sit.",
     ],
     price: 260.4,
-    img: "https://placehold.co/800x600/png",
+    img: "/productos/vaso-mug.jpg",
     tags: ["vasos"],
   },
   {
@@ -626,7 +626,7 @@ const products: Product[] = [
       "Fusce egestas neque quam. Cras auctor risus vitae aliquam auctor. Quisque eget mi non diam tincidunt semper. Integer ornare tortor et mi scelerisque, sit.",
     ],
     price: 1041.6,
-    img: "https://placehold.co/800x600/png",
+    img: "/productos/set-x4-vaso-mug.jpg",
     tags: ["vasos"],
   },
   {
@@ -638,7 +638,7 @@ const products: Product[] = [
       "Fusce egestas neque quam. Cras auctor risus vitae aliquam auctor. Quisque eget mi non diam tincidunt semper. Integer ornare tortor et mi scelerisque, sit.",
     ],
     price: 778.4,
-    img: "https://placehold.co/800x600/png",
+    img: "/productos/jarro.jpg",
     tags: ["vasos"],
   },
   {
@@ -650,7 +650,7 @@ const products: Product[] = [
       "Fusce egestas neque quam. Cras auctor risus vitae aliquam auctor. Quisque eget mi non diam tincidunt semper. Integer ornare tortor et mi scelerisque, sit.",
     ],
     price: 1176,
-    img: "https://placehold.co/800x600/png",
+    img: "/productos/set-escolar-triple-simple.jpg",
     tags: ["vasos"],
   },
   {
@@ -662,7 +662,7 @@ const products: Product[] = [
       "Fusce egestas neque quam. Cras auctor risus vitae aliquam auctor. Quisque eget mi non diam tincidunt semper. Integer ornare tortor et mi scelerisque, sit.",
     ],
     price: 1176,
-    img: "https://placehold.co/800x600/png",
+    img: "/productos/set-escolar-triple-formas.jpg",
     tags: ["vasos"],
   },
 
@@ -675,7 +675,7 @@ const products: Product[] = [
       "Fusce egestas neque quam. Cras auctor risus vitae aliquam auctor. Quisque eget mi non diam tincidunt semper. Integer ornare tortor et mi scelerisque, sit.",
     ],
     price: 1895.6,
-    img: "https://placehold.co/800x600/png",
+    img: "/productos/colador-giratorio.jpg",
     tags: ["artículos de cocina"],
   },
   {
@@ -687,7 +687,7 @@ const products: Product[] = [
       "Fusce egestas neque quam. Cras auctor risus vitae aliquam auctor. Quisque eget mi non diam tincidunt semper. Integer ornare tortor et mi scelerisque, sit.",
     ],
     price: 1327.2,
-    img: "https://placehold.co/800x600/png",
+    img: "/productos/jarra-1.5-lts-con-tapa.jpg",
     tags: ["artículos de cocina"],
   },
   {
@@ -699,7 +699,7 @@ const products: Product[] = [
       "Fusce egestas neque quam. Cras auctor risus vitae aliquam auctor. Quisque eget mi non diam tincidunt semper. Integer ornare tortor et mi scelerisque, sit.",
     ],
     price: 1044.4,
-    img: "https://placehold.co/800x600/png",
+    img: "/productos/jarra-1.5-lts-sin-tapa.jpg",
     tags: ["artículos de cocina"],
   },
   {
@@ -711,7 +711,7 @@ const products: Product[] = [
       "Fusce egestas neque quam. Cras auctor risus vitae aliquam auctor. Quisque eget mi non diam tincidunt semper. Integer ornare tortor et mi scelerisque, sit.",
     ],
     price: 1904,
-    img: "https://placehold.co/800x600/png",
+    img: "/productos/set-jarra-1.7-lts-4-vasos.jpg",
     tags: ["artículos de cocina"],
   },
   {
@@ -723,7 +723,7 @@ const products: Product[] = [
       "Fusce egestas neque quam. Cras auctor risus vitae aliquam auctor. Quisque eget mi non diam tincidunt semper. Integer ornare tortor et mi scelerisque, sit.",
     ],
     price: 1820,
-    img: "https://placehold.co/800x600/png",
+    img: "/productos/organizador-para-heladera.jpg",
     tags: ["artículos de cocina"],
   },
   {
@@ -735,7 +735,7 @@ const products: Product[] = [
       "Fusce egestas neque quam. Cras auctor risus vitae aliquam auctor. Quisque eget mi non diam tincidunt semper. Integer ornare tortor et mi scelerisque, sit.",
     ],
     price: 1128.4,
-    img: "https://placehold.co/800x600/png",
+    img: "/productos/jarra-pinguino-con-tapa.jpg",
     tags: ["artículos de cocina"],
   },
   {
@@ -747,7 +747,7 @@ const products: Product[] = [
       "Fusce egestas neque quam. Cras auctor risus vitae aliquam auctor. Quisque eget mi non diam tincidunt semper. Integer ornare tortor et mi scelerisque, sit.",
     ],
     price: 1038.8,
-    img: "https://placehold.co/800x600/png",
+    img: "/productos/jarra-pinguino-sin-tapa.jpg",
     tags: ["artículos de cocina"],
   },
   {
@@ -759,7 +759,7 @@ const products: Product[] = [
       "Fusce egestas neque quam. Cras auctor risus vitae aliquam auctor. Quisque eget mi non diam tincidunt semper. Integer ornare tortor et mi scelerisque, sit.",
     ],
     price: 700,
-    img: "https://placehold.co/800x600/png",
+    img: "/productos/escurridor-ovalado.jpg",
     tags: ["artículos de cocina"],
   },
   {
@@ -771,7 +771,7 @@ const products: Product[] = [
       "Fusce egestas neque quam. Cras auctor risus vitae aliquam auctor. Quisque eget mi non diam tincidunt semper. Integer ornare tortor et mi scelerisque, sit.",
     ],
     price: 1988,
-    img: "https://placehold.co/800x600/png",
+    img: "/productos/escurridor-para-bacha.jpg",
     tags: ["artículos de cocina"],
   },
   {
@@ -783,7 +783,7 @@ const products: Product[] = [
       "Fusce egestas neque quam. Cras auctor risus vitae aliquam auctor. Quisque eget mi non diam tincidunt semper. Integer ornare tortor et mi scelerisque, sit.",
     ],
     price: 478.8,
-    img: "https://placehold.co/800x600/png",
+    img: "/productos/big-cupcake.jpg",
     tags: ["artículos de cocina"],
   },
   {
@@ -795,7 +795,7 @@ const products: Product[] = [
       "Fusce egestas neque quam. Cras auctor risus vitae aliquam auctor. Quisque eget mi non diam tincidunt semper. Integer ornare tortor et mi scelerisque, sit.",
     ],
     price: 327.6,
-    img: "https://placehold.co/800x600/png",
+    img: "/productos/bowl-postre-sweet.jpg",
     tags: ["artículos de cocina"],
   },
   {
@@ -807,7 +807,7 @@ const products: Product[] = [
       "Fusce egestas neque quam. Cras auctor risus vitae aliquam auctor. Quisque eget mi non diam tincidunt semper. Integer ornare tortor et mi scelerisque, sit.",
     ],
     price: 350,
-    img: "https://placehold.co/800x600/png",
+    img: "/productos/bowl-snack.jpg",
     tags: ["artículos de cocina"],
   },
   {
@@ -819,7 +819,7 @@ const products: Product[] = [
       "Fusce egestas neque quam. Cras auctor risus vitae aliquam auctor. Quisque eget mi non diam tincidunt semper. Integer ornare tortor et mi scelerisque, sit.",
     ],
     price: 803.6,
-    img: "https://placehold.co/800x600/png",
+    img: "/productos/bowl-ovalado.jpg",
     tags: ["artículos de cocina"],
   },
   {
@@ -831,7 +831,7 @@ const products: Product[] = [
       "Fusce egestas neque quam. Cras auctor risus vitae aliquam auctor. Quisque eget mi non diam tincidunt semper. Integer ornare tortor et mi scelerisque, sit.",
     ],
     price: 560,
-    img: "https://placehold.co/800x600/png",
+    img: "/productos/cazuela.jpg",
     tags: ["artículos de cocina"],
   },
   {
@@ -843,7 +843,7 @@ const products: Product[] = [
       "Fusce egestas neque quam. Cras auctor risus vitae aliquam auctor. Quisque eget mi non diam tincidunt semper. Integer ornare tortor et mi scelerisque, sit.",
     ],
     price: 756,
-    img: "https://placehold.co/800x600/png",
+    img: "/productos/cubetera-14.jpg",
     tags: ["artículos de cocina"],
   },
   {
@@ -855,7 +855,7 @@ const products: Product[] = [
       "Fusce egestas neque quam. Cras auctor risus vitae aliquam auctor. Quisque eget mi non diam tincidunt semper. Integer ornare tortor et mi scelerisque, sit.",
     ],
     price: 756,
-    img: "https://placehold.co/800x600/png",
+    img: "/productos/cubetera-24.jpg",
     tags: ["artículos de cocina"],
   },
   {
@@ -867,7 +867,7 @@ const products: Product[] = [
       "Fusce egestas neque quam. Cras auctor risus vitae aliquam auctor. Quisque eget mi non diam tincidunt semper. Integer ornare tortor et mi scelerisque, sit.",
     ],
     price: 756,
-    img: "https://placehold.co/800x600/png",
+    img: "/productos/cubetera-44.jpg",
     tags: ["artículos de cocina"],
   },
   {
@@ -879,7 +879,7 @@ const products: Product[] = [
       "Fusce egestas neque quam. Cras auctor risus vitae aliquam auctor. Quisque eget mi non diam tincidunt semper. Integer ornare tortor et mi scelerisque, sit.",
     ],
     price: 2380,
-    img: "https://placehold.co/800x600/png",
+    img: "/productos/set-cubetera-14-con-tapa.jpg",
     tags: ["artículos de cocina"],
   },
   {
@@ -891,7 +891,7 @@ const products: Product[] = [
       "Fusce egestas neque quam. Cras auctor risus vitae aliquam auctor. Quisque eget mi non diam tincidunt semper. Integer ornare tortor et mi scelerisque, sit.",
     ],
     price: 2380,
-    img: "https://placehold.co/800x600/png",
+    img: "/productos/set-cubetera-24-con-tapa.jpg",
     tags: ["artículos de cocina"],
   },
   {
@@ -903,7 +903,7 @@ const products: Product[] = [
       "Fusce egestas neque quam. Cras auctor risus vitae aliquam auctor. Quisque eget mi non diam tincidunt semper. Integer ornare tortor et mi scelerisque, sit.",
     ],
     price: 2380,
-    img: "https://placehold.co/800x600/png",
+    img: "/productos/set-cubetera-44-con-tapa.jpg",
     tags: ["artículos de cocina"],
   },
   {
@@ -915,7 +915,7 @@ const products: Product[] = [
       "Fusce egestas neque quam. Cras auctor risus vitae aliquam auctor. Quisque eget mi non diam tincidunt semper. Integer ornare tortor et mi scelerisque, sit.",
     ],
     price: 3427.2,
-    img: "https://placehold.co/800x600/png",
+    img: "/productos/dispenser.jpg",
     tags: ["artículos de cocina"],
   },
   {
@@ -927,7 +927,7 @@ const products: Product[] = [
       "Fusce egestas neque quam. Cras auctor risus vitae aliquam auctor. Quisque eget mi non diam tincidunt semper. Integer ornare tortor et mi scelerisque, sit.",
     ],
     price: 4468.8,
-    img: "https://placehold.co/800x600/png",
+    img: "/productos/dispenser-con-4-vasos.jpg",
     tags: ["artículos de cocina"],
   },
   {
@@ -939,7 +939,7 @@ const products: Product[] = [
       "Fusce egestas neque quam. Cras auctor risus vitae aliquam auctor. Quisque eget mi non diam tincidunt semper. Integer ornare tortor et mi scelerisque, sit.",
     ],
     price: 1478.4,
-    img: "https://placehold.co/800x600/png",
+    img: "/productos/cesto-de-puerta.jpg",
     tags: ["artículos de cocina"],
   },
   {
@@ -951,7 +951,7 @@ const products: Product[] = [
       "Fusce egestas neque quam. Cras auctor risus vitae aliquam auctor. Quisque eget mi non diam tincidunt semper. Integer ornare tortor et mi scelerisque, sit.",
     ],
     price: 375.2,
-    img: "https://placehold.co/800x600/png",
+    img: "/productos/plato-postre.jpg",
     tags: ["artículos de cocina"],
   },
   {
@@ -963,7 +963,7 @@ const products: Product[] = [
       "Fusce egestas neque quam. Cras auctor risus vitae aliquam auctor. Quisque eget mi non diam tincidunt semper. Integer ornare tortor et mi scelerisque, sit.",
     ],
     price: 582.4,
-    img: "https://placehold.co/800x600/png",
+    img: "/productos/plato-infantil-iml.jpg",
     tags: ["artículos de cocina"],
   },
   {
@@ -975,7 +975,7 @@ const products: Product[] = [
       "Fusce egestas neque quam. Cras auctor risus vitae aliquam auctor. Quisque eget mi non diam tincidunt semper. Integer ornare tortor et mi scelerisque, sit.",
     ],
     price: 803.6,
-    img: "https://placehold.co/800x600/png",
+    img: "/productos/jarra-0.76-lts.jpg",
     tags: ["artículos de cocina"],
   },
   {
@@ -987,7 +987,7 @@ const products: Product[] = [
       "Fusce egestas neque quam. Cras auctor risus vitae aliquam auctor. Quisque eget mi non diam tincidunt semper. Integer ornare tortor et mi scelerisque, sit.",
     ],
     price: 1453.2,
-    img: "https://placehold.co/800x600/png",
+    img: "/productos/jarra-americana-2.25-lts-con-tapa.jpg",
     tags: ["artículos de cocina"],
   },
   {
@@ -999,7 +999,7 @@ const products: Product[] = [
       "Fusce egestas neque quam. Cras auctor risus vitae aliquam auctor. Quisque eget mi non diam tincidunt semper. Integer ornare tortor et mi scelerisque, sit.",
     ],
     price: 2234.4,
-    img: "https://placehold.co/800x600/png",
+    img: "/productos/set-jarra-americana-2.25-lts-3-vasos-mug.jpg",
     tags: ["artículos de cocina"],
   },
 
@@ -1012,7 +1012,7 @@ const products: Product[] = [
       "Fusce egestas neque quam. Cras auctor risus vitae aliquam auctor. Quisque eget mi non diam tincidunt semper. Integer ornare tortor et mi scelerisque, sit.",
     ],
     price: 1460,
-    img: "https://placehold.co/800x600/png",
+    img: "/productos/balde-10-lts-negro.jpg",
     tags: ["artículos de limpieza"],
   },
   {
@@ -1024,7 +1024,7 @@ const products: Product[] = [
       "Fusce egestas neque quam. Cras auctor risus vitae aliquam auctor. Quisque eget mi non diam tincidunt semper. Integer ornare tortor et mi scelerisque, sit.",
     ],
     price: 1607.2,
-    img: "https://placehold.co/800x600/png",
+    img: "/productos/balde-10-lts-eco-color.jpg",
     tags: ["artículos de limpieza"],
   },
   {
@@ -1036,7 +1036,7 @@ const products: Product[] = [
       "Fusce egestas neque quam. Cras auctor risus vitae aliquam auctor. Quisque eget mi non diam tincidunt semper. Integer ornare tortor et mi scelerisque, sit.",
     ],
     price: 456.4,
-    img: "https://placehold.co/800x600/png",
+    img: "/productos/jabonera-ballena.jpg",
     tags: ["artículos de limpieza"],
   },
   {
@@ -1048,7 +1048,7 @@ const products: Product[] = [
       "Fusce egestas neque quam. Cras auctor risus vitae aliquam auctor. Quisque eget mi non diam tincidunt semper. Integer ornare tortor et mi scelerisque, sit.",
     ],
     price: 310.8,
-    img: "https://placehold.co/800x600/png",
+    img: "/productos/jabonera-simple.jpg",
     tags: ["artículos de limpieza"],
   },
   {
@@ -1060,7 +1060,7 @@ const products: Product[] = [
       "Fusce egestas neque quam. Cras auctor risus vitae aliquam auctor. Quisque eget mi non diam tincidunt semper. Integer ornare tortor et mi scelerisque, sit.",
     ],
     price: 2079,
-    img: "https://placehold.co/800x600/png",
+    img: "/productos/fuenton-oso.jpg",
     tags: ["artículos de limpieza"],
   },
   {
@@ -1072,7 +1072,7 @@ const products: Product[] = [
       "Fusce egestas neque quam. Cras auctor risus vitae aliquam auctor. Quisque eget mi non diam tincidunt semper. Integer ornare tortor et mi scelerisque, sit.",
     ],
     price: 518,
-    img: "https://placehold.co/800x600/png",
+    img: "/productos/palita-basura-negro.jpg",
     tags: ["artículos de limpieza"],
   },
   {
@@ -1084,7 +1084,7 @@ const products: Product[] = [
       "Fusce egestas neque quam. Cras auctor risus vitae aliquam auctor. Quisque eget mi non diam tincidunt semper. Integer ornare tortor et mi scelerisque, sit.",
     ],
     price: 688.8,
-    img: "https://placehold.co/800x600/png",
+    img: "/productos/palita-basura-color.jpg",
     tags: ["artículos de limpieza"],
   },
   {
@@ -1096,7 +1096,7 @@ const products: Product[] = [
       "Fusce egestas neque quam. Cras auctor risus vitae aliquam auctor. Quisque eget mi non diam tincidunt semper. Integer ornare tortor et mi scelerisque, sit.",
     ],
     price: 582.4,
-    img: "https://placehold.co/800x600/png",
+    img: "/productos/percha-economica-negro.jpg",
     tags: ["artículos de limpieza"],
   },
   {
@@ -1108,7 +1108,7 @@ const products: Product[] = [
       "Fusce egestas neque quam. Cras auctor risus vitae aliquam auctor. Quisque eget mi non diam tincidunt semper. Integer ornare tortor et mi scelerisque, sit.",
     ],
     price: 691.6,
-    img: "https://placehold.co/800x600/png",
+    img: "/productos/percha-economica-color.jpg",
     tags: ["artículos de limpieza"],
   },
 ];
