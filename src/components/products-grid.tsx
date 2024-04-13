@@ -28,8 +28,8 @@ export default function ProductsGrid({
     <AsElement
       className={cn(
         "grid gap-8",
-        gridMode === "fill" && "grid-cols-[repeat(auto-fill,minmax(20ch,1fr))]",
-        gridMode === "fit" && "grid-cols-[repeat(auto-fit,minmax(20ch,1fr))]",
+        gridMode === "fill" && "grid-cols-[repeat(auto-fill,minmax(24ch,1fr))]",
+        gridMode === "fit" && "grid-cols-[repeat(auto-fit,minmax(24ch,1fr))]",
         className,
       )}
     >
