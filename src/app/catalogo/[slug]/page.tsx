@@ -25,7 +25,9 @@ export function generateMetadata({ params }: Props) {
 }
 
 export default function ProductPage({ params }: Props) {
-  const { name, description, price, img, tags } = findProduct(params.slug);
+  const { name, code, description, price, img, tags } = findProduct(
+    params.slug,
+  );
 
   const link = getWhatsAppLink(
     +process.env.NEXT_PUBLIC_PHONE,
@@ -44,12 +46,13 @@ export default function ProductPage({ params }: Props) {
         />
       </div>
       <div className="prose col-span-5 w-full prose-a:no-underline">
-        <header>
-          <div className="mb-4 flex flex-wrap gap-2">
+        <header className="space-y-4">
+          <div className="flex flex-wrap gap-2">
             {tags.map((tag, i) => (
               <Tag value={tag} key={i} />
             ))}
           </div>
+          <p className="font-mono text-xl font-bold">{code}</p>
           <h1>{name}</h1>
         </header>
 
