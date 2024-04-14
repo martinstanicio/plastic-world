@@ -18,6 +18,8 @@ export default function Brand({ bigLogo = false, className, ...props }: Props) {
       <Image
         src={logo}
         alt="Logo de Plastic World"
+        width={64}
+        height={64}
         className={cn(
           "size-10 drop-shadow-xl dark:drop-shadow-none sm:size-14",
           bigLogo && "size-16",

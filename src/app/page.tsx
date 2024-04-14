@@ -59,6 +59,7 @@ export default function Home() {
               src="https://placehold.co/800x600/png"
               alt=""
               fill
+              sizes="(min-width: 1220px) 528px, (min-width: 780px) 44.29vw, (min-width: 700px) 586px, calc(92.11vw - 40px)"
               className="overflow-hidden rounded-md object-cover object-center shadow"
             />
           </div>

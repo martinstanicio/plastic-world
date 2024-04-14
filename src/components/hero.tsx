@@ -47,7 +47,7 @@ export default function Hero() {
           src={logo}
           alt="Logo de Plastic World"
           priority
-          sizes="auto"
+          sizes="(min-width: 1100px) 480px, calc(40.67vw + 41px)"
           className="aspect-[4/3] w-full max-w-[30rem] object-contain object-center drop-shadow-2xl"
         />
       </div>
