@@ -582,6 +582,19 @@ const products: Product[] = [
     img: "/productos/percha-economica-color.jpg",
     tags: ["artículos de limpieza"],
   },
+
+  {
+    slug: "porta-sube",
+    name: "Porta sube",
+    code: "PORTFUT 01",
+    description: [
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec velit dui, cursus ut auctor a, posuere.",
+      "Fusce egestas neque quam. Cras auctor risus vitae aliquam auctor. Quisque eget mi non diam tincidunt semper. Integer ornare tortor et mi scelerisque, sit.",
+    ],
+    price: 480,
+    img: "/productos/porta-sube.jpg",
+    tags: ["varios"],
+  },
 ];
 
 export default products;
