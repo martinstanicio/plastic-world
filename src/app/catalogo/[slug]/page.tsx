@@ -25,9 +25,7 @@ export function generateMetadata({ params }: Props) {
 }
 
 export default function ProductPage({ params }: Props) {
-  const { name, code, description, price, img, tags } = findProduct(
-    params.slug,
-  );
+  const { name, code, price, img, tags } = findProduct(params.slug);
 
   const link = getWhatsAppLink(
     +process.env.NEXT_PUBLIC_PHONE,
@@ -56,10 +54,6 @@ export default function ProductPage({ params }: Props) {
           <p className="font-mono text-xl font-bold">{code}</p>
           <h1>{name}</h1>
         </header>
-
-        {description.map((paragraph, i) => (
-          <p key={i}>{paragraph}</p>
-        ))}
 
         <p className="text-3xl font-bold">{ARS.format(price)}</p>
 
