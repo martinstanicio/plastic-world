@@ -1,14 +1,16 @@
 import type { Metadata } from "next";
 
 export const siteName = "Plastic World";
-export const title = "Encontrá lo que necesitas";
+export const title = "Tu bazar de confianza";
 export const description =
-  "Lorem ipsum dolor sit amet consectetur adipisicing elit. In, ducimus! Eos optio nesciunt maiores dolores hic.";
+  "Calidad y variedad de productos de bazar para ventas mayoristas y minoristas.";
 export const keywords = [
   "bazar",
   "productos de plastico",
   "plastico",
   "articulos de cocina",
+  "mayorista",
+  "minorista",
 ];
 
 export const metadata: Metadata = {
