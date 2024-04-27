@@ -1,12 +1,9 @@
 import { Metadata } from "next";
-import Image from "next/image";
-
-import image01 from "@/assets/about-us-01.png";
-import image02 from "@/assets/about-us-02.png";
-import image03 from "@/assets/about-us-03.png";
+import Link from "next/link";
 
 const title = "Sobre Nosotros";
-const description = "";
+const description =
+  "Un vistazo de lo que está detrás de Plastic World, para que conozcas quiénes somos y cómo trabajamos.";
 const url = "/sobre-nosotros";
 
 export const metadata: Metadata = {
@@ -23,75 +20,32 @@ export default function Products() {
         <p>{description}</p>
       </header>
       <main>
-        <h2>Bienvenidos a Plastic World</h2>
+        <h2>
+          Bienvenidos a <span className="text-primary">Plastic World</span>
+        </h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
-          ipsa quos inventore cupiditate debitis quas explicabo eos aliquid
-          dolor molestiae rerum minus facere totam voluptate perferendis sit
-          cumque neque fugiat, exercitationem est.
+          Con más de <strong>25 años de experiencia</strong> en el rubro de la
+          venta, tanto <strong>minorista</strong> como{" "}
+          <strong>mayorista</strong>, nos enorgullece presentarnos como una
+          distribuidora mayorista comprometida con la calidad, la exclusividad y{" "}
+          <strong>la satisfacción de nuestros clientes</strong>.
         </p>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
-          provident eos, incidunt velit, ea ipsum cum sunt reiciendis
-          voluptates, laboriosam dolorem nam iusto quisquam atque? Ipsam illo
-          repellat a nemo corrupti odit dolores? Iste.
+          En <strong className="text-primary">Plastic World</strong>{" "}
+          seleccionamos cuidadosamente cada producto de nuestro{" "}
+          <Link href="/catalogo">catálogo</Link>, asegurándonos de que cumpla
+          con <strong>los más altos estándares de calidad</strong>. Trabajamos
+          en estrecha colaboración con nuestros proveedores para garantizar que
+          nuestros productos sean fabricados con{" "}
+          <strong>materiales de primera calidad</strong> y siguiendo procesos de
+          producción rigurosos.
         </p>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro debitis
-          corporis quod numquam adipisci pariatur? Dolorum est facere, quo esse
-          deleniti sunt dicta in quia sequi, nulla, sint natus?
-        </p>
-        <figure>
-          <Image
-            src={image01}
-            alt="Lorem ipsum dolor sit amet consectetur."
-            sizes="auto"
-            placeholder="blur"
-            className="rounded-md bg-secondary"
-          />
-          <figcaption>Lorem ipsum dolor sit amet consectetur.</figcaption>
-        </figure>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis
-          ea sequi iste quis eveniet quidem quasi dolore totam, dolorum libero,
-          nostrum enim quisquam a facilis mollitia quaerat.
-        </p>
-        <figure>
-          <Image
-            src={image02}
-            alt="Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo itaque natus nihil?"
-            sizes="auto"
-            placeholder="blur"
-            className="rounded-md bg-secondary"
-          />
-          <figcaption>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo itaque
-            natus nihil?
-          </figcaption>
-        </figure>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
-          quibusdam omnis dolor placeat magni nulla optio! Quisquam at deserunt
-          dignissimos error molestias temporibus fugiat officia a ipsa, nisi,
-          exercitationem corrupti nobis ut veniam? Dolor, dolorem.
-        </p>
-        <figure>
-          <Image
-            src={image03}
-            alt="Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut?"
-            sizes="auto"
-            placeholder="blur"
-            className="rounded-md bg-secondary"
-          />
-          <figcaption>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut?
-          </figcaption>
-        </figure>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores nisi
-          temporibus perferendis esse, aliquid quae aliquam cum? Dicta facilis
-          quis quia dolorem quaerat praesentium beatae commodi rerum natus sit
-          unde libero consequatur similique aut, nobis perferendis.
+          Te invitamos a descubrir el mundo de posibilidades que{" "}
+          <strong className="text-primary">Plastic World</strong> ofrece. Visitá
+          nuestro <Link href="/">sitio web</Link> o{" "}
+          <Link href="/contacto">contáctanos directamente</Link> para conocer
+          más sobre <Link href="catalogo">nuestros productos y servicios</Link>.
         </p>
       </main>
     </main>
