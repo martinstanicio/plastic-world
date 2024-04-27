@@ -91,20 +91,7 @@ export default function Home() {
           <section className="container max-w-prose space-y-8 py-8 md:max-w-6xl">
             <header className="prose md:text-center">
               <h2>Productos destacados</h2>
-              <p>
-                Descubre algunos de nuestros productos más vendidos, o envíanos
-                tu{" "}
-                <Link
-                  href={getWhatsAppLink(
-                    +process.env.NEXT_PUBLIC_PHONE,
-                  ).toString()}
-                  target="_blank"
-                  className="font-bold text-primary"
-                >
-                  pedido personalizado
-                </Link>{" "}
-                y Plastic World lo hace realidad.
-              </p>
+              <p>Descubre algunos de nuestros productos más vendidos.</p>
             </header>
             <div className="space-y-4">
               <Suspense>
