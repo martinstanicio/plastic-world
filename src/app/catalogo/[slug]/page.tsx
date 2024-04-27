@@ -14,13 +14,15 @@ export interface Props {
 }
 
 export function generateMetadata({ params }: Props) {
-  const { slug, name } = findProduct(params.slug);
+  const { slug, code, name, img } = findProduct(params.slug);
 
   const url = `/catalogo/${slug}`;
+  const description = `Producto N° ${code}: "${name}"`;
 
   return {
     title: name,
-    openGraph: { title: name, url },
+    description,
+    openGraph: { title: name, description, url, images: [img] },
   };
 }
 
