@@ -1,8 +1,8 @@
 import {
   faBox,
   faClock,
+  faCoins,
   faMagnifyingGlass,
-  faUser,
 } from "@fortawesome/free-solid-svg-icons";
 
 import { Suspense } from "react";
@@ -31,14 +31,9 @@ export default function Home() {
         <div className="border-y bg-secondary text-secondary-foreground shadow-inner-y">
           <section className="container grid max-w-prose grid-cols-1 gap-8 py-8 sm:grid-cols-2 md:max-w-6xl lg:grid-cols-4">
             <BenefitCard
-              title="Variedad de productos"
-              description="Encontrá lo que estás buscando."
+              title="Variedad y calidad"
+              description="Todo tipo de productos de primera."
               icon={faMagnifyingGlass}
-            />
-            <BenefitCard
-              title="Atención al cliente"
-              description="Atención personalizada."
-              icon={faUser}
             />
             <BenefitCard
               title="Disponibilidad"
@@ -46,8 +41,13 @@ export default function Home() {
               icon={faClock}
             />
             <BenefitCard
-              title="Envíos a domicilio"
-              description="Envíos a todo el país."
+              title="Cantidad"
+              description="Ventas mayoristas y minoristas."
+              icon={faCoins}
+            />
+            <BenefitCard
+              title="Flexibilidad"
+              description="Envíos a domicilio."
               icon={faBox}
             />
           </section>
@@ -63,17 +63,18 @@ export default function Home() {
               className="overflow-hidden rounded-md object-cover object-center shadow"
             />
           </div>
-          <div className="prose prose-a:no-underline">
+          <div className="prose">
             <h2>¿Quiénes somos?</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa,
-              deserunt reprehenderit culpa illum nulla optio assumenda veritatis
-              ea, inventore laboriosam dolorum placeat aliquid aliquam.
+              Con más de 25 años de experiencia en la venta minorista y
+              mayorista, en{" "}
+              <strong className="text-primary">Plastic World</strong> nos
+              dedicamos a ofrecer productos de calidad y exclusividad.
             </p>
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non,
-              debitis. Expedita, praesentium debitis animi porro dolores
-              accusantium impedit eligendi magni a dolorem!
+              Seleccionamos cuidadosamente cada artículo de nuestro{" "}
+              <Link href="/catalogo">catálogo</Link>, garantizando los más altos
+              estándares de calidad.
             </p>
             <p>
               <strong className="text-primary">
@@ -81,7 +82,7 @@ export default function Home() {
               </strong>
             </p>
 
-            <Button asChild className="max-md:w-full">
+            <Button asChild className="not-prose max-md:w-full">
               <Link href="/sobre-nosotros">Sobre nosotros</Link>
             </Button>
           </div>
