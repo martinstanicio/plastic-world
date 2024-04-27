@@ -10,12 +10,12 @@ export default function Hero() {
     <section className="mx-auto grid max-w-6xl md:grid-cols-2">
       <div className="prose z-10 flex max-w-md flex-col justify-center px-4 py-8 prose-a:no-underline md:px-8 md:py-16 md:pr-0">
         <h1 className="text-balance">
-          Encontrá lo que necesitás con{" "}
+          Encontrá tu bazar de confianza en{" "}
           <span className="text-primary">Plastic World</span>
         </h1>
         <p className="lead mt-0 md:w-11/12">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. In, ducimus!
-          Eos optio nesciunt maiores dolores hic.
+          Calidad y variedad de productos de bazar para ventas mayoristas y
+          minoristas.
         </p>
         <div className="flex w-full flex-wrap gap-4">
           <Button asChild size="lg" className="max-md:flex-grow">
