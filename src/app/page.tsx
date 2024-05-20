@@ -53,39 +53,27 @@ export default function Home() {
           </section>
         </div>
 
-        <section className="container grid max-w-prose gap-8 py-8 md:max-w-6xl md:grid-cols-2">
-          <div className="relative h-full max-md:aspect-[4/3]">
-            <Image
-              src="https://placehold.co/800x600/png"
-              alt=""
-              fill
-              sizes="(min-width: 1220px) 528px, (min-width: 780px) 44.29vw, (min-width: 700px) 586px, calc(92.11vw - 40px)"
-              className="overflow-hidden rounded-md object-cover object-center shadow"
-            />
-          </div>
-          <div className="prose">
-            <h2>¿Quiénes somos?</h2>
-            <p>
-              Con más de 25 años de experiencia en la venta minorista y
-              mayorista, en{" "}
-              <strong className="text-primary">Plastic World</strong> nos
-              dedicamos a ofrecer productos de calidad y exclusividad.
-            </p>
-            <p>
-              Seleccionamos cuidadosamente cada artículo de nuestro{" "}
-              <Link href="/catalogo">catálogo</Link>, garantizando los más altos
-              estándares de calidad.
-            </p>
-            <p>
-              <strong className="text-primary">
-                ¡Plastic World tiene lo que necesitás!
-              </strong>
-            </p>
+        <section className="container prose max-w-prose text-balance py-8 text-center">
+          <h2>¿Quiénes somos?</h2>
+          <p>
+            Con más de 25 años de experiencia en la venta minorista y mayorista,
+            en <strong className="text-primary">Plastic World</strong> nos
+            dedicamos a ofrecer productos de calidad y exclusividad.
+          </p>
+          <p>
+            Seleccionamos cuidadosamente cada artículo de nuestro{" "}
+            <Link href="/catalogo">catálogo</Link>, garantizando los más altos
+            estándares de calidad.
+          </p>
+          <p>
+            <strong className="text-primary">
+              ¡Plastic World tiene lo que necesitás!
+            </strong>
+          </p>
 
-            <Button asChild className="not-prose max-md:w-full">
-              <Link href="/sobre-nosotros">Sobre nosotros</Link>
-            </Button>
-          </div>
+          <Button asChild className="not-prose max-md:w-full">
+            <Link href="/sobre-nosotros">Sobre nosotros</Link>
+          </Button>
         </section>
         <div className="border-y bg-secondary text-secondary-foreground shadow-inner-y">
           <section className="container max-w-prose space-y-8 py-8 md:max-w-6xl">
