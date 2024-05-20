@@ -53,7 +53,7 @@ export default function Home() {
           </section>
         </div>
 
-        <section className="container prose max-w-prose text-balance py-8 text-center">
+        <section className="container prose max-w-prose text-balance py-8 md:text-center">
           <h2>¿Quiénes somos?</h2>
           <p>
             Con más de 25 años de experiencia en la venta minorista y mayorista,
