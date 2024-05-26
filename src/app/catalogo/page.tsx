@@ -19,7 +19,7 @@ export const metadata: Metadata = {
 
 export default function Products() {
   return (
-    <main className="container min-h-screen max-w-prose space-y-8 py-8 md:max-w-6xl">
+    <div className="container min-h-screen max-w-prose space-y-8 py-8 md:max-w-6xl">
       <header className="prose md:text-center">
         <h1>{title}</h1>
       </header>
@@ -33,6 +33,6 @@ export default function Products() {
           />
         </div>
       </Suspense>
-    </main>
+    </div>
   );
 }
