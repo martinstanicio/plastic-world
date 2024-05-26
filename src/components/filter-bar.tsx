@@ -51,7 +51,6 @@ export default function FilterBar() {
 
         {productTags.map((tag, i) => (
           <Button
-            type="submit"
             variant={
               searchParams.has("categoria") &&
               searchParams.getAll("categoria").includes(tag)
