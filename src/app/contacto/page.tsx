@@ -23,7 +23,10 @@ export default function Contacto() {
         <h1>{title}</h1>
         <p>
           Puedes comunicarte con nosotros mediante WhatsApp (
-          <a href={getWhatsAppLink(+process.env.NEXT_PUBLIC_PHONE).toString()}>
+          <a
+            href={getWhatsAppLink(+process.env.NEXT_PUBLIC_PHONE).toString()}
+            target="_blank"
+          >
             {formatPhoneNumber(+process.env.NEXT_PUBLIC_PHONE, 2, 1, 2)}
           </a>
           ), o el formulario que encontrarás a continuación. También puedes

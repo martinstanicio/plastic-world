@@ -114,7 +114,10 @@ export default function ContactForm() {
         <p>
           ¿Estás teniendo problemas con el formulario? Podés comunicarte de
           forma directa con nosotros mediante WhatsApp:{" "}
-          <a href={getWhatsAppLink(+process.env.NEXT_PUBLIC_PHONE).toString()}>
+          <a
+            href={getWhatsAppLink(+process.env.NEXT_PUBLIC_PHONE).toString()}
+            target="_blank"
+          >
             {formatPhoneNumber(+process.env.NEXT_PUBLIC_PHONE, 2, 1, 2)}
           </a>
         </p>
