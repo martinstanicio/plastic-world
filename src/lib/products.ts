@@ -7,7 +7,7 @@ export type Product = {
   name: string;
   code: string;
   price: number;
-  img: string;
+  imgs: string[];
   tags: string[];
 };
 

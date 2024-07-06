@@ -23,7 +23,7 @@ export default function ProductCard({
   slug,
   name,
   price,
-  img,
+  imgs,
   tags,
   priority = false,
   ...props
@@ -32,7 +32,7 @@ export default function ProductCard({
     <Card {...props}>
       <CardImage>
         <Image
-          src={img}
+          src={imgs[0]}
           alt={name}
           fill
           priority={priority}

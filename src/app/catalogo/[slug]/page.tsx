@@ -3,6 +3,13 @@ import Link from "next/link";
 
 import Tag from "@/components/tag";
 import { Button } from "@/components/ui/button";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 import { ARS } from "@/lib/currency";
 import { allProductsSlugs, findProduct } from "@/lib/products";
 import { getWhatsAppLink } from "@/lib/whatsapp";
@@ -27,7 +34,7 @@ export function generateMetadata({ params }: Props) {
 }
 
 export default function ProductPage({ params }: Props) {
-  const { name, code, price, img, tags } = findProduct(params.slug);
+  const { name, code, price, imgs, tags } = findProduct(params.slug);
 
   const link = getWhatsAppLink(
     +process.env.NEXT_PUBLIC_PHONE,
@@ -37,15 +44,28 @@ export default function ProductPage({ params }: Props) {
 
   return (
     <main className="container mx-auto max-w-prose py-8 max-lg:space-y-8 lg:grid lg:max-w-6xl lg:grid-cols-12 lg:gap-8">
-      <div className="relative col-span-7 aspect-square w-full bg-secondary text-secondary-foreground">
-        <Image
-          src={img}
-          alt={name}
-          fill
-          priority
-          className="rounded-md object-cover object-center"
-        />
-      </div>
+      <Carousel className="col-span-7 aspect-square w-full">
+        <CarouselContent>
+          {imgs.map((img, i) => (
+            <CarouselItem key={i} className="aspect-square">
+              <div className="relative h-full">
+                <Image
+                  src={img}
+                  alt={name}
+                  fill
+                  priority
+                  className="rounded-md bg-secondary object-cover object-center text-secondary-foreground"
+                />
+              </div>
+            </CarouselItem>
+          ))}
+        </CarouselContent>
+        <div className="flex gap-4">
+          <CarouselPrevious />
+          <CarouselNext />
+        </div>
+      </Carousel>
+
       <div className="prose col-span-5 w-full prose-a:no-underline">
         <header className="space-y-4">
           <div className="flex flex-wrap gap-2">

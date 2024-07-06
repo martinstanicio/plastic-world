@@ -6,7 +6,7 @@ const products: Product[] = [
     name: "Canasto chico",
     code: "2601/00",
     price: 1795,
-    img: "/productos/canasto-chico.jpg",
+    imgs: ["/productos/canasto-chico.jpg"],
     tags: ["canastos"],
   },
   {
@@ -14,7 +14,7 @@ const products: Product[] = [
     name: "Canasto dos partes",
     code: "2603/00",
     price: 2805,
-    img: "/productos/canasto-dos-partes.jpg",
+    imgs: ["/productos/canasto-dos-partes.jpg"],
     tags: ["canastos"],
   },
   {
@@ -22,7 +22,7 @@ const products: Product[] = [
     name: "Caja organizadora calada con tapa mediano",
     code: "2604/00",
     price: 4001,
-    img: "/productos/caja-organizadora-calada-con-tapa-mediano.jpg",
+    imgs: ["/productos/caja-organizadora-calada-con-tapa-mediano.jpg"],
     tags: ["canastos"],
   },
   {
@@ -30,7 +30,7 @@ const products: Product[] = [
     name: "Caja organizadora calada con tapa grande",
     code: "2605/00",
     price: 4082.4,
-    img: "/productos/caja-organizadora-calada-con-tapa-grande.jpg",
+    imgs: ["/productos/caja-organizadora-calada-con-tapa-grande.jpg"],
     tags: ["canastos"],
   },
   {
@@ -38,7 +38,7 @@ const products: Product[] = [
     name: "Cesto para ropa",
     code: "2606/00",
     price: 4566.8,
-    img: "/productos/cesto-para-ropa.jpg",
+    imgs: ["/productos/cesto-para-ropa.jpg"],
     tags: ["canastos"],
   },
   {
@@ -46,7 +46,7 @@ const products: Product[] = [
     name: "Box rectangular",
     code: "2608/00",
     price: 5194,
-    img: "/productos/box-rectangular.jpg",
+    imgs: ["/productos/box-rectangular.jpg"],
     tags: ["canastos"],
   },
 
@@ -55,7 +55,7 @@ const products: Product[] = [
     name: "Banquito cuadrado",
     code: "4001/00",
     price: 2587.2,
-    img: "/productos/banquito-cuadrado.jpg",
+    imgs: ["/productos/banquito-cuadrado.jpg"],
     tags: ["banquetas"],
   },
   {
@@ -63,7 +63,7 @@ const products: Product[] = [
     name: "Banquito redondo",
     code: "4002/00",
     price: 2587.2,
-    img: "/productos/banquito-redondo.jpg",
+    imgs: ["/productos/banquito-redondo.jpg"],
     tags: ["banquetas"],
   },
   {
@@ -71,7 +71,7 @@ const products: Product[] = [
     name: "Banquito oso",
     code: "4003/00",
     price: 2587.2,
-    img: "/productos/banquito-oso.jpg",
+    imgs: ["/productos/banquito-oso.jpg"],
     tags: ["banquetas"],
   },
   {
@@ -79,7 +79,7 @@ const products: Product[] = [
     name: "Banquito gato",
     code: "4004/00",
     price: 2587.2,
-    img: "/productos/banquito-gato.jpg",
+    imgs: ["/productos/banquito-gato.jpg"],
     tags: ["banquetas"],
   },
   {
@@ -87,7 +87,7 @@ const products: Product[] = [
     name: "Banqueta redonda negra",
     code: "4007/00",
     price: 2721.6,
-    img: "/productos/banqueta-redonda-negra.jpg",
+    imgs: ["/productos/banqueta-redonda-negra.jpg"],
     tags: ["banquetas"],
   },
   {
@@ -95,7 +95,7 @@ const products: Product[] = [
     name: "Banquito con respaldo",
     code: "4008/00",
     price: 5580.4,
-    img: "/productos/banquito-con-respaldo.jpg",
+    imgs: ["/productos/banquito-con-respaldo.jpg"],
     tags: ["banquetas"],
   },
   {
@@ -103,7 +103,7 @@ const products: Product[] = [
     name: "Sillita infantil con respaldo",
     code: "4009/00",
     price: 2587.2,
-    img: "/productos/sillita-infantil-con-respaldo.jpg",
+    imgs: ["/productos/sillita-infantil-con-respaldo.jpg"],
     tags: ["banquetas"],
   },
 
@@ -112,7 +112,7 @@ const products: Product[] = [
     name: "Mesa plástica infantil 40x40x40 cm",
     code: "7001/00",
     price: 5863.2,
-    img: "/productos/mesa-plastica-infantil.jpg",
+    imgs: ["/productos/mesa-plastica-infantil.jpg"],
     tags: ["mesas"],
   },
 
@@ -121,7 +121,7 @@ const products: Product[] = [
     name: "Vaso Stark",
     code: "5001/00",
     price: 1226.4,
-    img: "/productos/vaso-stark.jpg",
+    imgs: ["/productos/vaso-stark.jpg"],
     tags: ["vasos"],
   },
   {
@@ -129,7 +129,7 @@ const products: Product[] = [
     name: "Vaso con tapa grande",
     code: "5002/01",
     price: 728,
-    img: "/productos/vaso-con-tapa-grande.jpg",
+    imgs: ["/productos/vaso-con-tapa-grande.jpg"],
     tags: ["vasos"],
   },
   {
@@ -137,7 +137,7 @@ const products: Product[] = [
     name: "Vaso largo con tapón",
     code: "5004/00",
     price: 840,
-    img: "/productos/vaso-largo-con-tapon.jpg",
+    imgs: ["/productos/vaso-largo-con-tapon.jpg"],
     tags: ["vasos"],
   },
   {
@@ -145,7 +145,7 @@ const products: Product[] = [
     name: "Vaso grande con frase",
     code: "5002/114",
     price: 932.4,
-    img: "/productos/vaso-grande-con-frase.jpg",
+    imgs: ["/productos/vaso-grande-con-frase.jpg"],
     tags: ["vasos"],
   },
   {
@@ -153,7 +153,7 @@ const products: Product[] = [
     name: "Vaso chico",
     code: "5007/00",
     price: 145,
-    img: "/productos/vaso-chico.jpg",
+    imgs: ["/productos/vaso-chico.jpg"],
     tags: ["vasos"],
   },
   {
@@ -161,7 +161,7 @@ const products: Product[] = [
     name: "Vaso pingüino",
     code: "5008/00",
     price: 170,
-    img: "/productos/vaso-pinguino.jpg",
+    imgs: ["/productos/vaso-pinguino.jpg"],
     tags: ["vasos"],
   },
   {
@@ -169,7 +169,7 @@ const products: Product[] = [
     name: "Taza love",
     code: "5012/00",
     price: 481.6,
-    img: "/productos/taza-love.jpg",
+    imgs: ["/productos/taza-love.jpg"],
     tags: ["vasos"],
   },
   {
@@ -177,7 +177,7 @@ const products: Product[] = [
     name: "Taza trebol",
     code: "5013/00",
     price: 453.6,
-    img: "/productos/taza-trebol.jpg",
+    imgs: ["/productos/taza-trebol.jpg"],
     tags: ["vasos"],
   },
   {
@@ -185,7 +185,7 @@ const products: Product[] = [
     name: "Jarro capuchino",
     code: "5014/99",
     price: 481.6,
-    img: "/productos/jarro-capuchino.jpg",
+    imgs: ["/productos/jarro-capuchino.jpg"],
     tags: ["vasos"],
   },
   {
@@ -193,7 +193,7 @@ const products: Product[] = [
     name: "Set x4 vaso mug",
     code: "5015/99",
     price: 1041.6,
-    img: "/productos/set-x4-vaso-mug.jpg",
+    imgs: ["/productos/set-x4-vaso-mug.jpg"],
     tags: ["vasos"],
   },
   {
@@ -201,7 +201,7 @@ const products: Product[] = [
     name: "Set escolar triple formas",
     code: "5017/99",
     price: 1176,
-    img: "/productos/set-escolar-triple-formas.jpg",
+    imgs: ["/productos/set-escolar-triple-formas.jpg"],
     tags: ["vasos"],
   },
 
@@ -210,7 +210,7 @@ const products: Product[] = [
     name: "Colador giratorio",
     code: "9001/00",
     price: 1895.6,
-    img: "/productos/colador-giratorio.jpg",
+    imgs: ["/productos/colador-giratorio.jpg"],
     tags: ["artículos de cocina"],
   },
   {
@@ -218,7 +218,7 @@ const products: Product[] = [
     name: "Set jarra 1,7 lts + 4 vasos",
     code: "9002/99",
     price: 1904,
-    img: "/productos/set-jarra-1.7-lts-4-vasos.jpg",
+    imgs: ["/productos/set-jarra-1.7-lts-4-vasos.jpg"],
     tags: ["artículos de cocina"],
   },
   {
@@ -226,7 +226,7 @@ const products: Product[] = [
     name: "Organizador para heladera",
     code: "9003/00",
     price: 1820,
-    img: "/productos/organizador-para-heladera.jpg",
+    imgs: ["/productos/organizador-para-heladera.jpg"],
     tags: ["artículos de cocina"],
   },
   {
@@ -234,7 +234,7 @@ const products: Product[] = [
     name: "Escurridor para bacha",
     code: "9006/00",
     price: 1988,
-    img: "/productos/escurridor-para-bacha.jpg",
+    imgs: ["/productos/escurridor-para-bacha.jpg"],
     tags: ["artículos de cocina"],
   },
   {
@@ -242,7 +242,7 @@ const products: Product[] = [
     name: "Big cupcake",
     code: "9007/00",
     price: 478.8,
-    img: "/productos/big-cupcake.jpg",
+    imgs: ["/productos/big-cupcake.jpg"],
     tags: ["artículos de cocina"],
   },
   {
@@ -250,7 +250,7 @@ const products: Product[] = [
     name: "Bowl postre sweet",
     code: "9008/00",
     price: 327.6,
-    img: "/productos/bowl-postre-sweet.jpg",
+    imgs: ["/productos/bowl-postre-sweet.jpg"],
     tags: ["artículos de cocina"],
   },
   {
@@ -258,7 +258,7 @@ const products: Product[] = [
     name: "Bowl ovalado",
     code: "9010/00",
     price: 803.6,
-    img: "/productos/bowl-ovalado.jpg",
+    imgs: ["/productos/bowl-ovalado.jpg"],
     tags: ["artículos de cocina"],
   },
   {
@@ -266,7 +266,7 @@ const products: Product[] = [
     name: "Cazuela",
     code: "9011/00",
     price: 560,
-    img: "/productos/cazuela.jpg",
+    imgs: ["/productos/cazuela.jpg"],
     tags: ["artículos de cocina"],
   },
   {
@@ -274,7 +274,7 @@ const products: Product[] = [
     name: "Cubetera 14",
     code: "9012/00",
     price: 756,
-    img: "/productos/cubetera-14.jpg",
+    imgs: ["/productos/cubetera-14.jpg"],
     tags: ["artículos de cocina"],
   },
   {
@@ -282,7 +282,7 @@ const products: Product[] = [
     name: "Set cubetera 24 con tapa",
     code: "9013/99",
     price: 2380,
-    img: "/productos/set-cubetera-24-con-tapa.jpg",
+    imgs: ["/productos/set-cubetera-24-con-tapa.jpg"],
     tags: ["artículos de cocina"],
   },
   {
@@ -290,7 +290,7 @@ const products: Product[] = [
     name: "Dispenser",
     code: "9015/00",
     price: 3427.2,
-    img: "/productos/dispenser.jpg",
+    imgs: ["/productos/dispenser.jpg"],
     tags: ["artículos de cocina"],
   },
   {
@@ -298,7 +298,7 @@ const products: Product[] = [
     name: "Cesto de puerta",
     code: "9016/00",
     price: 1478.4,
-    img: "/productos/cesto-de-puerta.jpg",
+    imgs: ["/productos/cesto-de-puerta.jpg"],
     tags: ["artículos de cocina"],
   },
   {
@@ -306,7 +306,7 @@ const products: Product[] = [
     name: "Plato infantil IML",
     code: "9017/114",
     price: 582.4,
-    img: "/productos/plato-infantil-iml.jpg",
+    imgs: ["/productos/plato-infantil-iml.jpg"],
     tags: ["artículos de cocina"],
   },
   {
@@ -314,7 +314,7 @@ const products: Product[] = [
     name: "Jarra 0,76 lts",
     code: "9018/00",
     price: 803.6,
-    img: "/productos/jarra-0.76-lts.jpg",
+    imgs: ["/productos/jarra-0.76-lts.jpg"],
     tags: ["artículos de cocina"],
   },
   {
@@ -322,7 +322,7 @@ const products: Product[] = [
     name: "Jarra americana 2,25 lts con tapa",
     code: "9019/00",
     price: 1453.2,
-    img: "/productos/jarra-americana-2.25-lts-con-tapa.jpg",
+    imgs: ["/productos/jarra-americana-2.25-lts-con-tapa.jpg"],
     tags: ["artículos de cocina"],
   },
   {
@@ -330,7 +330,7 @@ const products: Product[] = [
     name: "Set jarra americana 2,25 lts + 3 vasos mug",
     code: "9019/99",
     price: 2234.4,
-    img: "/productos/set-jarra-americana-2.25-lts-3-vasos-mug.jpg",
+    imgs: ["/productos/set-jarra-americana-2.25-lts-3-vasos-mug.jpg"],
     tags: ["artículos de cocina"],
   },
 
@@ -339,7 +339,7 @@ const products: Product[] = [
     name: "Balde 10 lts negro",
     code: "8001/00",
     price: 1460,
-    img: "/productos/balde-10-lts-negro.jpg",
+    imgs: ["/productos/balde-10-lts-negro.jpg"],
     tags: ["artículos de limpieza"],
   },
   {
@@ -347,7 +347,7 @@ const products: Product[] = [
     name: "Balde 10 lts eco color",
     code: "8001/99",
     price: 1607.2,
-    img: "/productos/balde-10-lts-eco-color.jpg",
+    imgs: ["/productos/balde-10-lts-eco-color.jpg"],
     tags: ["artículos de limpieza"],
   },
   {
@@ -355,7 +355,7 @@ const products: Product[] = [
     name: "Jabonera ballena",
     code: "8002/00",
     price: 456.4,
-    img: "/productos/jabonera-ballena.jpg",
+    imgs: ["/productos/jabonera-ballena.jpg"],
     tags: ["artículos de limpieza"],
   },
   {
@@ -363,7 +363,7 @@ const products: Product[] = [
     name: "Jabonera simple",
     code: "8003/00",
     price: 310.8,
-    img: "/productos/jabonera-simple.jpg",
+    imgs: ["/productos/jabonera-simple.jpg"],
     tags: ["artículos de limpieza"],
   },
   {
@@ -371,7 +371,7 @@ const products: Product[] = [
     name: "Fuentón oso",
     code: "8004/00",
     price: 2079,
-    img: "/productos/fuenton-oso.jpg",
+    imgs: ["/productos/fuenton-oso.jpg"],
     tags: ["artículos de limpieza"],
   },
   {
@@ -379,7 +379,7 @@ const products: Product[] = [
     name: "Percha económica negro * 4",
     code: "8006/00",
     price: 582.4,
-    img: "/productos/percha-economica-negro.jpg",
+    imgs: ["/productos/percha-economica-negro.jpg"],
     tags: ["artículos de limpieza"],
   },
   {
@@ -387,7 +387,7 @@ const products: Product[] = [
     name: "Percha económica color * 4",
     code: "8006/99",
     price: 691.6,
-    img: "/productos/percha-economica-color.jpg",
+    imgs: ["/productos/percha-economica-color.jpg"],
     tags: ["artículos de limpieza"],
   },
 
@@ -396,7 +396,7 @@ const products: Product[] = [
     name: "Porta sube",
     code: "PORTFUT 01",
     price: 480,
-    img: "/productos/porta-sube.jpg",
+    imgs: ["/productos/porta-sube.jpg"],
     tags: ["varios"],
   },
 ];
