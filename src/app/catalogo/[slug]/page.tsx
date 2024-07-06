@@ -21,7 +21,7 @@ export interface Props {
 }
 
 export function generateMetadata({ params }: Props) {
-  const { slug, code, name, img } = findProduct(params.slug);
+  const { slug, code, name, imgs } = findProduct(params.slug);
 
   const url = `/catalogo/${slug}`;
   const description = `Producto N° ${code}: "${name}"`;
@@ -29,7 +29,7 @@ export function generateMetadata({ params }: Props) {
   return {
     title: name,
     description,
-    openGraph: { title: name, description, url, images: [img] },
+    openGraph: { title: name, description, url, images: [imgs[0]] },
   };
 }
 
