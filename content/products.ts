@@ -469,19 +469,6 @@ const accesorios: Product[] = [
     tags: ["broches"],
   },
   {
-    slug: "broche-calado-med",
-    name: "Broche calado med x12",
-    code: "121/14",
-    price: 1960,
-    imgs: [
-      "/productos/broche-calado-med-01.jpg",
-      "/productos/broche-calado-med-02.jpg",
-      "/productos/broche-calado-med-03.jpg",
-      "/productos/broche-calado-med-04.jpg",
-    ],
-    tags: ["broches"],
-  },
-  {
     slug: "broche-abanico",
     name: "Broche abanico x12",
     code: "127/14",
