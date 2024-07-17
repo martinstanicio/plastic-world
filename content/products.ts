@@ -760,6 +760,30 @@ const accesorios: Product[] = [
     tags: ["vinchas"],
   },
   {
+    slug: "vincha-conejo",
+    name: "Vincha conejo x6",
+    code: "712/14",
+    price: 1512,
+    imgs: [
+      "/productos/vincha-conejo-01.jpg",
+      "/productos/vincha-conejo-02.jpg",
+      "/productos/vincha-conejo-03.jpg",
+      "/productos/vincha-conejo-04.jpg",
+    ],
+    tags: ["vinchas"],
+  },
+  {
+    slug: "vincha-orejas-llenas",
+    name: "Vincha orejas-llenas x6",
+    code: "713/14",
+    price: 1512,
+    imgs: [
+      "/productos/vincha-orejas-llenas-01.jpg",
+      "/productos/vincha-orejas-llenas-02.jpg",
+    ],
+    tags: ["vinchas"],
+  },
+  {
     slug: "palo-chino-formas",
     name: "Palo chino formas",
     code: "501/00",
@@ -800,6 +824,22 @@ const accesorios: Product[] = [
       "/productos/palo-chino-cuadrado-04.jpg",
     ],
     tags: ["palos chinos"],
+  },
+  {
+    slug: "rodetero",
+    name: "Rodetero x6",
+    code: "2400/14",
+    price: 2660,
+    imgs: ["/productos/rodetero.jpg"],
+    tags: ["broches"],
+  },
+  {
+    slug: "pulsera-silicona-estampada",
+    name: "Pulsera de silicona estampada x12",
+    code: "407/114",
+    price: 1820,
+    imgs: ["/productos/pulsera-silicona-estampada.jpg"],
+    tags: ["pulseras"],
   },
 ];
 
