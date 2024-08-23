@@ -395,7 +395,7 @@ const bazar: Product[] = [
     slug: "porta-sube",
     name: "Porta sube",
     code: "PORTFUT 01",
-    price: 480, // ACTUALIZAR PRECIO
+    price: 550,
     imgs: ["/productos/porta-sube.jpg"],
     tags: ["varios"],
   },
