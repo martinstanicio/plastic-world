@@ -7,7 +7,6 @@ import {
 
 import { Suspense } from "react";
 
-import Image from "next/image";
 import Link from "next/link";
 
 import BenefitCard from "@/components/benefit-card";
@@ -15,7 +14,6 @@ import Hero from "@/components/hero";
 import ProductsGrid from "@/components/products-grid";
 import { Button } from "@/components/ui/button";
 import { findProduct } from "@/lib/products";
-import { getWhatsAppLink } from "@/lib/whatsapp";
 
 export default function Home() {
   const featuredProducts = [
