@@ -843,6 +843,88 @@ const accesorios: Product[] = [
   },
 ];
 
-const products: Product[] = [...bazar, ...accesorios];
+const cepillos: Product[] = [
+  {
+    slug: "cepillo-redondo-plastico",
+    name: "Cepillo redondo cabo plástico",
+    code: "414",
+    price: 2201,
+    imgs: ["/productos/cepillo-redondo-plastico.jpg"],
+    tags: ["cepillos"],
+  },
+  {
+    slug: "cepillo-plano-madera",
+    name: "Cepillo plano de madera",
+    code: "700",
+    price: 2971,
+    imgs: [
+      "/productos/cepillo-plano-madera-01.jpg",
+      "/productos/cepillo-plano-madera-02.jpg",
+    ],
+    tags: ["cepillos"],
+  },
+  {
+    slug: "cepillo-desenredante-arania",
+    name: "Cepillo desenredante araña",
+    code: "720",
+    price: 2128,
+    imgs: [
+      "/productos/cepillo-desenredante-arania-01.jpg",
+      "/productos/cepillo-desenredante-arania-02.jpg",
+    ],
+    tags: ["cepillos"],
+  },
+  {
+    slug: "cepillo-desenredante-oval",
+    name: "Cepillo desenredante oval",
+    code: "730",
+    price: 2293,
+    imgs: [
+      "/productos/cepillo-desenredante-oval-01.jpg",
+      "/productos/cepillo-desenredante-oval-02.jpg",
+    ],
+    tags: ["cepillos"],
+  },
+  {
+    slug: "cepillo-desenredante-paleta",
+    name: "Cepillo desenredante paleta",
+    code: "740",
+    price: 2456,
+    imgs: [
+      "/productos/cepillo-desenredante-paleta-01.jpg",
+      "/productos/cepillo-desenredante-paleta-02.jpg",
+    ],
+    tags: ["cepillos"],
+  },
+  {
+    slug: "cepillo-redondo-cabo-madera-barnizado",
+    name: "Cepillo redondo cabo madera barnizado",
+    code: "222",
+    price: 2878,
+    imgs: [
+      "/productos/cepillo-redondo-cabo-madera-barnizado-01.jpg",
+      "/productos/cepillo-redondo-cabo-madera-barnizado-02.jpg",
+    ],
+    tags: ["cepillos"],
+  },
+  {
+    slug: "cepillo-redondo-cabo-madera-tenido-encerado",
+    name: "Cepillo redondo cabo madera teñido y encerado",
+    code: "328",
+    price: 3489,
+    imgs: ["/productos/cepillo-redondo-cabo-madera-tenido-encerado.jpg"],
+    tags: ["cepillos"],
+  },
+  {
+    slug: "cepillo-espalda-madera-plastico",
+    name: "Cepillo de espalda madera o plástico",
+    code: "610",
+    price: 2159,
+    imgs: ["/productos/cepillo-espalda-madera-plastico.jpg"],
+    tags: ["cepillos"],
+  },
+];
+
+const products: Product[] = [...bazar, ...accesorios, ...cepillos];
 
 export default products;
