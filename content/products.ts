@@ -67,7 +67,7 @@ const bazar: Product[] = [
   },
   {
     slug: "estuche-chico",
-    name: "Estuche chico",
+    name: "Estuche chico (12.5*7*2)",
     code: "2609/00",
     price: 845,
     imgs: ["/productos/estuche-chico.jpg"],
@@ -75,7 +75,7 @@ const bazar: Product[] = [
   },
   {
     slug: "estuche-mediano",
-    name: "Estuche mediano",
+    name: "Estuche mediano (17*10*2)",
     code: "2610/00",
     price: 962,
     imgs: ["/productos/estuche-mediano.jpg"],
