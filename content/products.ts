@@ -428,6 +428,14 @@ const bazar: Product[] = [
     imgs: ["/productos/jarro-600-ml.jpg"],
     tags: ["vasos y tazas"],
   },
+  {
+    slug: "vaso-labubu",
+    name: "Vaso labubu",
+    code: "VSLABU 01",
+    price: 1050,
+    imgs: ["/productos/vaso-labubu.jpg"],
+    tags: ["vasos y tazas"],
+  },
 
   {
     slug: "vaso-decorado",
